@@ -1,0 +1,53 @@
+{
+  "name": "@stfsy/api-kit",
+  "version": "0.0.0",
+  "description": "Simple scheduling and queueing",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "18"
+  },
+  "bugs": {
+    "url": "https://github.com/stfsy/node-api-kit"
+  },
+  "repository": {
+    "url": "https://github.com/stfsy/node-api-kit/issues"
+  },
+  "scripts": {
+    "start": "functions-framework --target=api --signature-type=http",
+    "test": "mocha --timeout 10000 test/**/*spec.js --file test/global-mocha-setup.js",
+    "test:ci": "npm run test -- --forbid-only",
+    "coverage": "nyc c8 --100 npm run test:ci",
+    "standard-version": "standard-version",
+    "push-tags": "git push --follow-tags origin master",
+    "release-path": "npm run standard-version && npm run push-tags",
+    "release-minor": "npm run standard-version -- --release-as minor && npm run push-tags",
+    "release-major": "npm run standard-version -- --release-as major && npm run push-tags"
+  },
+  "type": "module",
+  "author": "Stefan Pfaffel <spfaffel@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fastest-validator": "^1.17.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "nanoid": "^4.0.2",
+    "re2": "^1.19.1",
+    "snake-case": "^3.0.4"
+  },
+  "devDependencies": {
+    "c8": "^8.0.0",
+    "chai": "^4.3.7",
+    "documentation": "^14.0.2",
+    "eslint": "^8.43.0",
+    "http-graceful-shutdown": "^3.1.13",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "nyc": "^15.1.0",
+    "standard-version": "^9.5.0",
+    "supertest": "^6.3.3"
+  }
+}
