@@ -96,6 +96,7 @@ describe('Configuration', () => {
 
     describe('.isCiCd', () => {
         it('returns false if env var is not set', () => {
+            process.env.GITHUB_ACTIONS = ''
             const ciCd = isCiCd()
             expect(ciCd).to.equal(false)
         })
