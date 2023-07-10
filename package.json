@@ -46,7 +46,7 @@
     "eslint": "^8.43.0",
     "http-graceful-shutdown": "^3.1.13",
     "mocha": "^10.2.0",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.1",
     "nyc": "^15.1.0",
     "pino-pretty": "^10.0.1",
     "standard-version": "^9.5.0",
