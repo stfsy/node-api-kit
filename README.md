@@ -18,18 +18,18 @@ This API starter kit provides a solid foundation for SaaS, Client/Server and API
 - [API9:2023](https://owasp.org/API-Security/editions/2023/en/0xa9-improper-inventory-management/) - **Improper Inventory Management**	APIs tend to expose more endpoints than traditional web applications, making proper and updated documentation highly important. A proper inventory of hosts and deployed API versions also are important to mitigate issues such as deprecated API versions and exposed debug endpoints.
 - [API10:2023](https://owasp.org/API-Security/editions/2023/en/0xaa-unsafe-consumption-of-apis/) - **Unsafe Consumption** of APIs	Developers tend to trust data received from third-party APIs more than user input, and so tend to adopt weaker security standards. In order to compromise APIs, attackers go after integrated third-party services instead of trying to compromise the target API directly.
 
-## How 
+## How
 ### Configuration
 In its current state, the API supports the following env vars:
 
-#### Required for production usage
+#### 💫 Required for production usage
 - `API_HOST_BASE_URL`: The base url of the api to be used for e.g. HATEOS links. 
   - Example: http://api.example.com
   - Default: http://localhost:5001
 - `NODE_ENV`: Indicates the environment: production, or development.
   - Default: **development**
 
-#### Required, if used with a frontend application
+#### 👩‍💻 Required, if used with a frontend application
 - `API_FRONTEND_HOST_BASE_URL`: The base url of the frontend application to be used for e.g. cookies. 
   - Example: https://www.example.com
   - Default: http://localhost:8080
