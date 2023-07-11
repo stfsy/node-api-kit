@@ -19,22 +19,9 @@ This API starter kit provides a solid foundation for SaaS, Client/Server and API
 - [API10:2023](https://owasp.org/API-Security/editions/2023/en/0xaa-unsafe-consumption-of-apis/) - **Unsafe Consumption** of APIs	Developers tend to trust data received from third-party APIs more than user input, and so tend to adopt weaker security standards. In order to compromise APIs, attackers go after integrated third-party services instead of trying to compromise the target API directly.
 
 ## How
-### Configuration
-In its current state, the API supports the following env vars:
-
-#### 💫 Required for production usage
-- `API_HOST_BASE_URL`: The base url of the api to be used for e.g. HATEOS links. 
-  - Example: http://api.example.com
-  - Default: http://localhost:5001
-- `NODE_ENV`: Indicates the environment: production, or development.
-  - Default: **development**
-
-#### 👩‍💻 Required, if used with a frontend application
-- `API_FRONTEND_HOST_BASE_URL`: The base url of the frontend application to be used for e.g. cookies. 
-  - Example: https://www.example.com
-  - Default: http://localhost:8080
-- `API_FRONTEND_COOKIE_PREFIX`: The prefix for cookie names. 
-  - Default: **api**
+- [Configuration](README_CONFIGURATION.md)
+- [Validation](README_VALIDATION.md)
+- [Validation Schemas](README_VALIDATION_SCHEMA.md)
 
 
 ### Middlewares
