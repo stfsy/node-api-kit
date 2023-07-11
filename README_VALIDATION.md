@@ -52,7 +52,7 @@ A property must have one of many `types`:
 - number
 - object
 - string
-- ... and [more](README_VALIDATION_SCHEMA.md)
+- ... and [more](README_VALIDATION_SCHEMA.md#built-in-validators)
 
 Besides the `type` definition, a property can have many `directives`:
 - default
