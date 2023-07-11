@@ -20,6 +20,7 @@ This API starter kit provides a solid foundation for SaaS, Client/Server and API
 
 ## How
 - [Configuration](README_CONFIGURATION.md)
+- [HTTP Endpoints](README_HTTP_ENDPOINTS.md)
 - [Validation](README_VALIDATION.md)
 - [Validation Schemas](README_VALIDATION_SCHEMA.md)
 
