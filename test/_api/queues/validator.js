@@ -1,4 +1,9 @@
+import * as _types from '../../../lib/types.js'
 import { createValidatorFromSchema } from '../../../lib/validation/resource-validator.js'
-import schema from './schema.js'
+import createSchemaProvider from './schema.js'
 
-export default createValidatorFromSchema({ createSchemaProvider: schema })
+/**
+ * @module queueValidator
+ * @returns {_types.ResourceValidator}
+ */
+export default createValidatorFromSchema({ createSchemaProvider })
