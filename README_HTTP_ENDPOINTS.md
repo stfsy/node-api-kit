@@ -89,7 +89,7 @@ An excerpt of the generic endpoint base class:
  * @returns {boolean} true if request handling was successful
  */
 async handleIncomingRequest(req, res) {
-    return httpAwareErrorHandler(res, async () => {
+    await httpAwareErrorHandler(res, async () => {
         const isValid = await this.validateRequest(req, res)
         if (isValid) {
             const resourceIds = this.buildResourcePath(req, res)
