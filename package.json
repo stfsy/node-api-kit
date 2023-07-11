@@ -18,7 +18,7 @@
     "test:ci": "npm run test -- --forbid-only",
     "coverage": "nyc c8 --100 npm run test:ci",
     "standard-version": "standard-version",
-    "push-tags": "git push --follow-tags origin master",
+    "push-tags": "git push --follow-tags origin main",
     "release-path": "npm run standard-version && npm run push-tags",
     "release-minor": "npm run standard-version -- --release-as minor && npm run push-tags",
     "release-major": "npm run standard-version -- --release-as major && npm run push-tags"
