@@ -5,7 +5,7 @@ provide a high abstraction level and consumption-based pricing, which allow even
 ## Why
 Although, the barrier for entering the market has been lowered, the demand for security has steadily increased. It is clear why: The internet has not only connected businesses and customers, or families and friends, but also hackers, and criminals. Thus, the need for security applications, infrastructure and service is as high as it has ever been.
 
-This API starter kit provides a solid foundation for SaaS, Client/Server and API products. It provides out-of-the-box mitigations for x of the [10 OWASP risks for APIs](https://owasp.org/API-Security/editions/2023/en/0x11-t10/):
+This API starter kit provides a solid foundation for SaaS, Client/Server and API products. It provides out-of-the-box mitigations for the [10 OWASP risks for APIs](https://owasp.org/API-Security/editions/2023/en/0x11-t10/):
 
 - [API1:2023](https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/) - **Broken Object Level Authorization**	APIs tend to expose endpoints that handle object identifiers, creating a wide attack surface of Object Level Access Control issues. Object level authorization checks should be considered in every function that accesses a data source using an ID from the user.
 - [API2:2023](https://owasp.org/API-Security/editions/2023/en/0xa2-broken-authentication/) - **Broken Authentication**	Authentication mechanisms are often implemented incorrectly, allowing attackers to compromise authentication tokens or to exploit implementation flaws to assume other user's identities temporarily or permanently. Compromising a system's ability to identify the client/user, compromises API security overall.
@@ -24,7 +24,6 @@ This API starter kit provides a solid foundation for SaaS, Client/Server and API
 - [Validation](README_VALIDATION.md)
 - [Validation Schemas](README_VALIDATION_SCHEMA.md)
 
-
 ### Middlewares
 By default, six `cross-cutting` middlewares are configured. These build the foundation for a secure API.
 
@@ -39,7 +38,7 @@ By default, six `cross-cutting` middlewares are configured. These build the foun
 ### Run
 To run the API in single instance mode.
 ```bash
-./scripts/run-api-clustered.sh
+./scripts/run-api.sh
 ```
 
 To run the API in clustered mode, mimicking a multi-instance mode.
