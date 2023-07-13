@@ -10,68 +10,53 @@ The 6 abstractions are:
 - `http-resource-endpoint`: The generic base class for all resource endpoints
 
 ## How To Create an Endpoint
-All endpoints - except the generic base class - provide a factory function to create an instance of an endpoint.
+We provide a factory function that creates endpoints for `GET`, `POST`, `PUT`, `DELETE` methods. This function can be used
+to create all endpoints for a domain at once.
 
 ```js
-
-import { createDeleteEndpoint } from "../../../lib/endpoints/http-delete-resource-endpoint.js";
-import { createGetAllEndpoint } from "../../../lib/endpoints/http-get-all-resource-endpoint.js";
-import { createGetEndpoint } from "../../../lib/endpoints/http-get-resource-endpoint.js";
-import { createPostEndpoint } from "../../../lib/endpoints/http-post-resource-endpoint.js";
-import { createPutEndpoint } from "../../../lib/endpoints/http-put-resource-endpoint.js";
+import factory from "../../../lib/endpoints/http-resource-endpoint-factory.js";
 import service from "./service.js";
 import validator from "./validator.js";
 
 const resourceName = 'queue'
 
-export const deleteEndpoint = createDeleteEndpoint({
-    resourceName,
-    service,
-    validator
-})
-
-export const getAllEndpoint = createGetAllEndpoint({
-    resourceName,
-    service,
-    validator
-})
-
-export const getEndpoint = createGetEndpoint({
-    resourceName,
-    service,
-    validator
-})
-
-export const postEndpoint = createPostEndpoint({
-    resourceName,
-    service,
-    validator
-})
-
-export const putEndpoint = createPutEndpoint({
-    resourceName,
-    service,
-    validator
-})
+/**
+ * @module endpointFactory
+ * @param {_types.HttpFactoryOptions} options
+ * @returns {_types.HttpFactoryEndpoints}
+ */
+export default factory({ service, validator, resourceName })
 ```
 
-As the factory functions return handler methods, the return values can be used directly to register routes.
+As the factory functions returns an object with handler methods, the return value can be used directly to register routes and endpoints.
 
 ```js
+import bodyParser from 'body-parser'
 import express from 'express'
-import { deleteEndpoint as deleteQueue, getAllEndpoint as getAllQueues, getEndpoint as getQueue, postEndpoint as postQueue, putEndpoint as putQueue } from './queues/endpoints.js'
+import { sendNotFound } from '../../lib/http/send-http-error.js'
+import queueEndpoints from './queues/endpoints.js'
 
-const app = express()
+export default () => {
+    const app = express()
 
-app.get('/queues', getAllQueues)
-app.post('/queues', postQueue)
-app.get('/queues/:queueId', getQueue)
-app.put('/queues/:queueId', putQueue)
-app.delete('/queues/:queueId', deleteQueue)
+    app.use(bodyParser.json())
 
-app.listen(7001, () => {
-    console.log('Test API server running on port', 7001)
-})
+    app.get('/queues', queueEndpoints.getAll)
+    app.post('/queues', queueEndpoints.post)
+    app.get('/queues/:queueId', queueEndpoints.get)
+    app.put('/queues/:queueId', queueEndpoints.put)
+    app.delete('/queues/:queueId', queueEndpoints.delete)
+
+    app.use((_, res) => {
+        sendNotFound(res)
+    })
+
+    const server = app.listen(7001, () => {
+        console.log('Test API server running on port', 7001)
+    })
+
+    return server
+}
 
 ```
 
