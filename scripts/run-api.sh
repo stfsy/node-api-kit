@@ -3,6 +3,11 @@
 set -e
 
 export API_HOST_BASE_URL=http://localhost:3000
-export NODE_OPTIONS="--require ./tracing.cjs --trace-warnings"
+export FIREBASE_CONFIG='{ "projectId": "test-project", "locationId": "test-location" }'
+export GCLOUD_PROJECT=test-project
+export FUNCTION_TARGET=test-function
+export K_REVISION=test-revision
+export K_SERVICE=test-service
+export NODE_OPTIONS="--require ./tracing/tracing.cjs --trace-warnings"
 
 npx nodemon node lib/index
