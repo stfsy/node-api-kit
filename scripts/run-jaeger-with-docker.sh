@@ -1,12 +1,13 @@
 #!/bin/bash
 
 function cleanup() {
-    echo 
+    echo stopping jaeger
 }
 
 trap cleanup EXIT
 
 docker run \
+  -d \
   -e COLLECTOR_ZIPKIN_HOST_PORT=:9411 \
   -e COLLECTOR_OTLP_ENABLED=true \
   -p 6831:6831/udp \
