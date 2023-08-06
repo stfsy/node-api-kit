@@ -12,6 +12,9 @@
     "*.md",
     "*.png"
   ],
+  "exports": {
+    "./util": "./lib/util/index.js"
+  },
   "bugs": {
     "url": "https://github.com/stfsy/node-api-kit"
   },
