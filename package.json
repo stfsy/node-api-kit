@@ -13,6 +13,7 @@
     "*.png"
   ],
   "exports": {
+    "./configurations": "./lib/configuration/service.js",
     "./utils": "./lib/util/index.js",
     "./middlewares": "./lib/middlewares/index.js"
   },
