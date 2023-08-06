@@ -20,10 +20,10 @@
     "lint": "npx eslint -c .eslintrc.cjs lib --ext .js,.jsx,.ts,.tsx",
     "lint-test": "npx eslint -c .eslintrc.cjs test --ext .js,.jsx,.ts,.tsx",
     "standard-version": "standard-version",
+    "publish-version": "npm publish --access public",
     "push-tags": "git push --follow-tags origin main",
-    "release-path": "npm run standard-version && npm run push-tags",
-    "release-minor": "npm run standard-version -- --release-as minor && npm run push-tags",
-    "release-major": "npm run standard-version -- --release-as major && npm run push-tags"
+    "release-minor": "npm run standard-version -- --release-as minor && npm run push-tags && npm run publish-version",
+    "release-major": "npm run standard-version -- --release-as major && npm run push-tags && npm run publish-version"
   },
   "type": "module",
   "author": "Stefan Pfaffel <spfaffel@gmail.com>",
