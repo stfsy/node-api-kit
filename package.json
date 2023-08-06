@@ -13,7 +13,8 @@
     "*.png"
   ],
   "exports": {
-    "./util": "./lib/util/index.js"
+    "./utils": "./lib/util/index.js",
+    "./middlewares": "./lib/middlewares/index.js"
   },
   "bugs": {
     "url": "https://github.com/stfsy/node-api-kit"
