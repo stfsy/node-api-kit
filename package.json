@@ -6,6 +6,12 @@
   "engines": {
     "node": "18"
   },
+  "files": [
+    "lib",
+    "tracing",
+    "*.md",
+    "*.png"
+  ],
   "bugs": {
     "url": "https://github.com/stfsy/node-api-kit"
   },
