@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.2.0...v0.3.0) (2023-08-07)
+
+
+### Bug Fixes
+
+* **cacheable:** sync cacheable must use sync span ([8b180d5](https://github.com/stfsy/node-api-kit/issues/commit/8b180d5a9d019b7eb8f64f9177a0407e2f7af34d))
+* **tracing:** callback not called with span argument ([6d16e12](https://github.com/stfsy/node-api-kit/issues/commit/6d16e1286079011a5ed96d87844bc71491adf341))
+
+
+### Refactorings
+
+* move http error handler to http folder ([6c01632](https://github.com/stfsy/node-api-kit/issues/commit/6c01632757b2530a28925b5d9264b0360d364ca2))
+
+
+### Chores
+
+* add single entrypoint for endpoints folder ([c8e3c07](https://github.com/stfsy/node-api-kit/issues/commit/c8e3c07392ac7c1c9220ae068e61e48311988f48))
+* add single entrypoint for middleware folder ([a9aa8ef](https://github.com/stfsy/node-api-kit/issues/commit/a9aa8ef2bfe4a32e9899acfe2db79ce1133ca7fc))
+* add single entrypoint for util folder ([dae8852](https://github.com/stfsy/node-api-kit/issues/commit/dae8852c005dca8a35f234131dd0dee5493d8cf7))
+* add single entrypoint for validation folder ([bf00393](https://github.com/stfsy/node-api-kit/issues/commit/bf00393e19af776ca8c60b5189a23e6e2e262f04))
+* add single single entrypoint for configuration folder ([9146088](https://github.com/stfsy/node-api-kit/issues/commit/9146088cfa772d1241eec9973ab2be373501bd35))
+* **delete-endpoint:** send empty body and links ([d2e36d8](https://github.com/stfsy/node-api-kit/issues/commit/d2e36d8b7f53be82076d246cef641ec5823fead2))
+* export http folder ([73cbffd](https://github.com/stfsy/node-api-kit/issues/commit/73cbffd6c6eb560627e40101164ba88359ab2347))
+* **package:** add files property ([4964740](https://github.com/stfsy/node-api-kit/issues/commit/49647404e3a0fd1fb570b3cb692380118a670258))
+* **utils:** update export names ([a047b10](https://github.com/stfsy/node-api-kit/issues/commit/a047b1070bd5a7bd24fa8af8a1a28fc6777c79f8))
+
 ## [0.2.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.1.0...v0.2.0) (2023-08-06)
 
 
