@@ -16,7 +16,7 @@ const validator = new OpenApiValidator(apiDocument, {
     ajvOptions: { formats }
 })
 
-const test = ({ baseUrl = 'http://localhost:5001/discue-io-dev/europe-west3/api', path, idToken, apiKey, method = 'get', logResponse, body }, validationCallbacks, done) => {
+const test = ({ baseUrl = 'http://127.0.0.1:5001/discue-io-dev/europe-west3/api', path, idToken, apiKey, method = 'get', logResponse, body }, validationCallbacks, done) => {
     return new Promise((resolve, reject) => {
         const testCase = supertest(baseUrl)[method](path)
             .set('Accept', 'application/json')

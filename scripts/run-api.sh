@@ -2,7 +2,7 @@
 
 set -e
 
-export API_HOST_BASE_URL=http://localhost:3000
+export API_HOST_BASE_URL=http://127.0.0.1:3000
 export FIREBASE_CONFIG='{ "projectId": "test-project", "locationId": "test-location" }'
 export GCLOUD_PROJECT=test-project
 export FUNCTION_TARGET=test-function

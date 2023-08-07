@@ -6,7 +6,7 @@ describe('Configuration', () => {
     describe('.apiHostname', () => {
         it('returns default if env var is not set', () => {
             const hostname = apiHostname()
-            expect(hostname).to.equal('http://localhost:5001')
+            expect(hostname).to.equal('http://127.0.0.1:5001')
         })
         it('returns value of env var', () => {
             process.env.API_HOST_BASE_URL = 'http://api.com'
@@ -18,7 +18,7 @@ describe('Configuration', () => {
     describe('.frontendHostname', () => {
         it('returns default if env var is not set', () => {
             const hostname = frontendHostname()
-            expect(hostname).to.equal('http://localhost:8080')
+            expect(hostname).to.equal('http://127.0.0.1:8080')
         })
         it('returns value of env var', () => {
             process.env.API_FRONTEND_BASE_URL = 'http://api.com'

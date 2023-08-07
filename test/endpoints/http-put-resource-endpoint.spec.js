@@ -78,7 +78,7 @@ describe('HttPutResourceEndpoint', () => {
             const storedQueue = service.getAll().at(0)
 
             const { _links: links } = body
-            expect(links.self.href).to.equal(`http://localhost:5001/queues/${storedQueue.id}`)
+            expect(links.self.href).to.equal(`http://127.0.0.1:5001/queues/${storedQueue.id}`)
         })
     })
 })

@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { default as supertest } from 'supertest'
 
-const test = ({ baseUrl = 'http://localhost:7001/', method = 'GET', path, logResponse = true, body }, validationCallbacks) => {
+const test = ({ baseUrl = 'http://127.0.0.1:7001/', method = 'GET', path, logResponse = true, body }, validationCallbacks) => {
     return new Promise((resolve, reject) => {
         const testCase = supertest(baseUrl)[method](path)
             .set('accept', 'application/json')

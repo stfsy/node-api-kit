@@ -109,10 +109,10 @@ describe('SendHttpOk', () => {
                 const payload = JSON.parse(responseString)
                 expect(responseString).to.include('\n')
                 expect(payload.hello).to.equal('world')
-                expect(payload._links.self).to.equal('http://localhost:8080')
+                expect(payload._links.self).to.equal('http://127.0.0.1:8080')
             }
         })
 
-        sendOk({ req, res, status: 201, body: { hello: 'world' }, links: { self: 'http://localhost:8080' } })
+        sendOk({ req, res, status: 201, body: { hello: 'world' }, links: { self: 'http://127.0.0.1:8080' } })
     })
 })

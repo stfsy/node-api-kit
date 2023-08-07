@@ -7,7 +7,7 @@ function cleanup() {
 trap cleanup EXIT
 
 # check whether jaeger is running
-curl --head http://localhost:16686 &>"/dev/null"
+curl --head http://127.0.0.1:16686 &>"/dev/null"
 if [[ "${?}" -ne 0 ]]; then
     echo "Jaeger container is not running. Starting it then"
     ./scripts/run-jaeger-with-docker.sh

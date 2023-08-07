@@ -57,8 +57,8 @@ describe('HttpGetAllResourceEndpoint', () => {
             expect(status).to.equal(200)
 
             const { _links: links } = body
-            expect(links.self.href).to.equal(`http://localhost:5001/queues`)
-            expect(links[id].href).to.equal(`http://localhost:5001/queues/${id}`)
+            expect(links.self.href).to.equal(`http://127.0.0.1:5001/queues`)
+            expect(links[id].href).to.equal(`http://127.0.0.1:5001/queues/${id}`)
         })
     })
 })
