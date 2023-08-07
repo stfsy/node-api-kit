@@ -17,7 +17,8 @@
     "./endpoints": "./lib/endpoints/index.js",
     "./http": "./lib/http/index.js",
     "./utils": "./lib/util/index.js",
-    "./middlewares": "./lib/middlewares/index.js"
+    "./middlewares": "./lib/middlewares/index.js",
+    "./validation": "./lib/validation/index.js"
   },
   "bugs": {
     "url": "https://github.com/stfsy/node-api-kit"
