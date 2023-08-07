@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { httpAwareErrorHandler } from "../../lib/util/http-aware-error-handler.js";
+import { httpAwareErrorHandler } from "../../lib/http/index.js";
 import responseMock from "../middlewares/response-mock.js";
 
 describe('HttpAwareErrorHandler', () => {
