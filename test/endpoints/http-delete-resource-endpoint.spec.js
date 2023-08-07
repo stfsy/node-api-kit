@@ -54,7 +54,8 @@ describe('HttpDeleteResourceEndpoint', () => {
             const { body, status } = res
             expect(status).to.equal(200)
 
-            expect(body).to.be.empty
+            expect(body).to.have.keys('_links')
+            expect(body._links).to.be.empty
         })
 
         expect(service.get([id])).to.be.undefined
@@ -69,8 +70,8 @@ describe('HttpDeleteResourceEndpoint', () => {
             const { body, status } = res
             expect(status).to.equal(200)
 
-            const { _links: links } = body
-            expect(links).to.be.undefined
+            expect(body).to.have.keys('_links')
+            expect(body._links).to.be.empty
         })
     })
 })
