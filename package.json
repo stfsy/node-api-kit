@@ -2,7 +2,6 @@
   "name": "@stfsy/api-kit",
   "version": "0.3.0",
   "description": "Simple scheduling and queueing",
-  "main": "lib/index.js",
   "engines": {
     "node": "18"
   },
@@ -12,7 +11,7 @@
     "*.md",
     "*.png"
   ],
-  "exports": {
+  "exports": { 
     "./configuration": "./lib/configuration/service.js",
     "./endpoints": "./lib/endpoints/index.js",
     "./http": "./lib/http/index.js",
