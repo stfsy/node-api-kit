@@ -15,6 +15,7 @@
   "exports": {
     "./configurations": "./lib/configuration/service.js",
     "./endpoints": "./lib/endpoints/index.js",
+    "./http": "./lib/http/index.js",
     "./utils": "./lib/util/index.js",
     "./middlewares": "./lib/middlewares/index.js"
   },
