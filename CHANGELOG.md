@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.3.0...v0.4.0) (2023-08-07)
+
+
+### Chores
+
+* **deps:** bump pino from 8.14.2 to 8.15.0 ([f44c34e](https://github.com/stfsy/node-api-kit/issues/commit/f44c34eac3e4d885fa6d42ab690fbe5e2ff15d8e))
+* make work on node18 by not using localhost ([f1ef695](https://github.com/stfsy/node-api-kit/issues/commit/f1ef695089da34f0dfb22be31f55b85bfd7c012b))
+* remove main entry ([2729763](https://github.com/stfsy/node-api-kit/issues/commit/27297636f19dc80ae9c54e10bc2b3dc1d98ebb90))
+* update configuration export name ([b7faf3a](https://github.com/stfsy/node-api-kit/issues/commit/b7faf3a2ef4ca5f0c733f4d4a302455571651b51))
+
 ## [0.3.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.2.0...v0.3.0) (2023-08-07)
 
 
