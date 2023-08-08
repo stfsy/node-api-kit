@@ -19,6 +19,28 @@
     "./middlewares": "./lib/middlewares/index.js",
     "./validation": "./lib/validation/index.js"
   },
+  "typesVersions": {
+    "*": {
+      "configuration": [
+        "lib/configuration"
+      ],
+      "endpoints": [
+        "lib/endpoints"
+      ],
+      "http": [
+        "lib/http"
+      ],
+      "utils": [
+        "lib/util"
+      ],
+      "middlewares": [
+        "lib/middlewares"
+      ],
+      "validation": [
+        "lib/validation"
+      ]
+    }
+  },
   "bugs": {
     "url": "https://github.com/stfsy/node-api-kit"
   },
