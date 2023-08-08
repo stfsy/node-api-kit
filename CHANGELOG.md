@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.4.0...v0.5.0) (2023-08-08)
+
+
+### Chores
+
+* add config for json serializer property ([307343f](https://github.com/stfsy/node-api-kit/issues/commit/307343fa170e9eabe5e72f36b9ccce950de250a1))
+* add typesVersions configuration ([b48415b](https://github.com/stfsy/node-api-kit/issues/commit/b48415bae527ae9bb7f31b03e6228b2f7ef61af5))
+* create index.js referencing all other index.jses ([f47771b](https://github.com/stfsy/node-api-kit/issues/commit/f47771bb1d023ae609fd726bebfb3d2baec0bf17))
+* **deps:** bump import-in-the-middle, @opentelemetry/instrumentation, @opentelemetry/instrumentation-grpc and @opentelemetry/instrumentation-http ([3f6c648](https://github.com/stfsy/node-api-kit/issues/commit/3f6c648241c1538a0b3d6c34a3f2de0e23f2c69d))
+* during release also create types ([03c0656](https://github.com/stfsy/node-api-kit/issues/commit/03c06568f6d7c5854cce8453b21c482ec2699bdc))
+* **error-handler:** also log stack trace ([b835c62](https://github.com/stfsy/node-api-kit/issues/commit/b835c62043f8f7dcbd28a9c016ed9bf3f29c65e1))
+* install typescript dev dependency ([fc4d8a4](https://github.com/stfsy/node-api-kit/issues/commit/fc4d8a46a7a11013226fef0a3f3bd45215e5751b))
+* point configuration export to index.js ([d8b3635](https://github.com/stfsy/node-api-kit/issues/commit/d8b3635dbd8fd877c38c92894ea452704c64502d))
+* rename index to api.js ([57e5f21](https://github.com/stfsy/node-api-kit/issues/commit/57e5f21b594ce15d17b8759979ad35d7d54640d1))
+
 ## [0.4.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.3.0...v0.4.0) (2023-08-07)
 
 
