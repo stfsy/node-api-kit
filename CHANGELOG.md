@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.5.0...v0.6.0) (2023-08-09)
+
+
+### Features
+
+* define prefix for keys that should not be returned to the client ([4929fe5](https://github.com/stfsy/node-api-kit/issues/commit/4929fe5499cd2db103b109a51c0e00f2af37502d))
+
+
+### Chores
+
+* **ci:** use different release action ([d0edca7](https://github.com/stfsy/node-api-kit/issues/commit/d0edca76aaada412d4d5070a525998e9657a66e0))
+* **deps:** update dependencies ([5d317ca](https://github.com/stfsy/node-api-kit/issues/commit/5d317ca5750152cbf708b09bcf75d976a4ef0661))
+
 ## [0.5.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.4.0...v0.5.0) (2023-08-08)
 
 
