@@ -23,13 +23,9 @@ jobs:
         run: |
           ./scripts/changes_for_release_notes.sh > ./${RELEASE_NAME}.md
 
-      - name: Create Release
-        uses: actions/create-release@v1
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          body_path: ./${{ env.RELEASE_NAME }}.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ env.RELEASE_VERSION }}
-          body_path: ./${{ env.RELEASE_NAME }}.md
-          draft: false
-          prerelease: false
