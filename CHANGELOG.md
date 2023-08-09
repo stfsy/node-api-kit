@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.6.0...v0.7.0) (2023-08-09)
+
+
+### Features
+
+* **links:** add method to create links for only self ([4a2e546](https://github.com/stfsy/node-api-kit/issues/commit/4a2e546dff1e173c6350b8a7929f2bac66005d9a))
+
+
+### Refactorings
+
+* use generic release script ([28dfd57](https://github.com/stfsy/node-api-kit/issues/commit/28dfd571c5aa2ecad70a89f5b0c9ba72d196ff54))
+
+
+### Chores
+
+* add types to gitignore ([26c718e](https://github.com/stfsy/node-api-kit/issues/commit/26c718e606d9d5a2729be0fb8f5b1d13b3930347))
+* remove token from release action ([0008297](https://github.com/stfsy/node-api-kit/issues/commit/00082979419be85e995403a070eb9209a1ccd4e5))
+
 ## [0.6.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.5.0...v0.6.0) (2023-08-09)
 
 
