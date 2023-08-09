@@ -14,3 +14,8 @@ In its current state, the API supports the following env vars:
   - Default: http://localhost:8080
 - `API_FRONTEND_COOKIE_PREFIX`: The prefix for cookie names. 
   - Default: **api**
+
+#### Optional
+- `API_JSON_SERIALIZER_PRIVATE_PROPERTY_PREFIX`: Defines the prefix used to determine, whether a key and value pair of the response body will be sent to the client or not.
+  - Example: _
+  - Default: $
