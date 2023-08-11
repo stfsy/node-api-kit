@@ -1,8 +1,8 @@
 import { expect } from "chai";
 import { customAlphabet } from "nanoid";
-import { resourceIdAlphabet } from "../../lib/util/resource-id.js";
-import validator from '../../lib/validation/validator.js';
-import { useResourceIdValidator } from "../../lib/validation/validators/resource-id-validator.js";
+import { resourceIdAlphabet } from "../../../lib/util/resource-id.js";
+import validator from '../../../lib/validation/validator.js';
+import { useResourceIdValidator } from "../../../lib/validation/validators/resource-id-validator.js";
 
 const nanoid = customAlphabet(resourceIdAlphabet)
 

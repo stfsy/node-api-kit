@@ -1,6 +1,6 @@
 import { expect } from "chai";
-import validator from '../../lib/validation/validator.js';
-import { useImmutableFieldValidator } from "../../lib/validation/validators/immutable-field-validator.js";
+import validator from '../../../lib/validation/validator.js';
+import { useImmutableFieldValidator } from "../../../lib/validation/validators/immutable-field-validator.js";
 
 describe('ImmutableFieldValidator', () => {
 
