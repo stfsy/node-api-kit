@@ -64,7 +64,7 @@
   },
   "type": "module",
   "author": "Stefan Pfaffel <spfaffel@gmail.com>",
-  "license": "BSL (Business Source License 1.1)",
+  "license": "BUSL-1.1",
   "dependencies": {
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/exporter-trace-otlp-http": "^0.41.2",
