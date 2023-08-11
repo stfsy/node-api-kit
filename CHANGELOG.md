@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.7.0...v0.8.0) (2023-08-11)
+
+
+### Features
+
+* add resource id validator ([0b0d20c](https://github.com/stfsy/node-api-kit/issues/commit/0b0d20cf440d5c70f92623efee6ecb725acc7305))
+* **links:** expose new createLinksForSelf method ([2e3e855](https://github.com/stfsy/node-api-kit/issues/commit/2e3e855887bd2a12eea007cb3bb5a29cd514193a))
+
+
+### Refactorings
+
+* move validator specs to correct folder ([b4b350f](https://github.com/stfsy/node-api-kit/issues/commit/b4b350f9c8ad84c9cacde3ddeb9bdf67cf367c65))
+* **validator:** convert to es6 class ([c151595](https://github.com/stfsy/node-api-kit/issues/commit/c15159551dc2f7fc26f9b2c704146a5ba8ac7f27))
+
+
+### Chores
+
+* add script to remove types ([95958c7](https://github.com/stfsy/node-api-kit/issues/commit/95958c748cafb643c1e40c468efac8d879252aa2))
+* correct license to match spdy ([c81ef3f](https://github.com/stfsy/node-api-kit/issues/commit/c81ef3f432a9c187b8f7b25994e4b9a32b27423f))
+* **validation:** also export validator constructor ([f1f752d](https://github.com/stfsy/node-api-kit/issues/commit/f1f752da87e9ecb40f77f40af48dc7a546e32883))
+
 ## [0.7.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.6.0...v0.7.0) (2023-08-09)
 
 
