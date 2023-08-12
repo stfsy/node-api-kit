@@ -9,6 +9,8 @@ export default ({ send, json, statusCode } = {}) => {
         // api
         cookie: (key, value) => { cookies[key] = value },
         end: () => { },
+        send,
+        json,
         status: (status) => { _statusCode = status; return { send, json, contentType: () => { return { send, json } } } },
         statusCode,
         removeHeader: () => { },
