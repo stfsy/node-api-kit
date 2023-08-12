@@ -1,11 +1,7 @@
-import bodyParser from 'body-parser'
-import express from 'express'
-import { sendNotFound } from '../../lib/http/send-http-error.js'
-import accessLog from '../../lib/middlewares/access-log.js'
-import contentType from '../../lib/middlewares/content-type.js'
-import defaultVersion from '../../lib/middlewares/default-version.js'
-import securityHeaders from '../../lib/middlewares/security-headers.js'
-import queueEndpoints from './queues/endpoints.js'
+import express from 'express';
+import { sendNotFound } from '../../lib/http/send-http-error.js';
+import { accessLog, bodyParser, contentType, defaultVersion, htmlEncoder, securityHeaders } from '../../lib/middlewares/index.js';
+import queueEndpoints from './queues/endpoints.js';
 
 export default () => {
     const app = express()
@@ -14,8 +10,11 @@ export default () => {
     app.use(securityHeaders())
     app.use(contentType())
     app.use(defaultVersion())
-    app.use(bodyParser.json())
-
+    app.use(bodyParser())
+    app.use(htmlEncoder({
+        encodeResponsePayload: false
+    }))
+    
     app.get('/queues', queueEndpoints.getAll)
     app.post('/queues', queueEndpoints.post)
     app.get('/queues/:queueId', queueEndpoints.get)
