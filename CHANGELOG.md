@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.9.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.8.0...v0.9.0) (2023-08-12)
+
+
+### Features
+
+* **middlewares:** add html-encoder middleware ([7b0a097](https://github.com/stfsy/node-api-kit/issues/commit/7b0a097a4290c41493b01663ea16020ac29f072a))
+
+
+### Chores
+
+* add encoder middleware to test servers ([1873072](https://github.com/stfsy/node-api-kit/issues/commit/1873072f7296b5b04ce8b12136bc8d3e409f50e9))
+* **deps:** install html-entities ([e76d69b](https://github.com/stfsy/node-api-kit/issues/commit/e76d69b02923c77ea5e8ce1698b1f9c47b29ce3c))
+* make scripts executable ([f956ba0](https://github.com/stfsy/node-api-kit/issues/commit/f956ba0ae2ae365e2ac0d3e3b02ec05866dfc411))
+
 ## [0.8.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.7.0...v0.8.0) (2023-08-11)
 
 
