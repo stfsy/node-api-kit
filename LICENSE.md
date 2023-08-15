@@ -1,7 +1,8 @@
-Business Source License 1.1
+# Business Source License 1.1
 
-Parameters
+## Parameters
 
+```
 Licensor:             Stefan Pfaffel
 Licensed Work:        node-api-kit
                       The Licensed Work is api-starter-kit.
@@ -9,18 +10,17 @@ Additional Use Grant: You may make use of the Licensed Work, provided that you d
                       not use the Licensed Work for a Competing Service.
 
                       A "Competing Service" is a commercial offering that allows
-                      third parties (other than your employees and contractors)
+                      third parties (including your employees and contractors)
                       to use or access the functionality of the Licensed Work for
                       the direct benefit of such third parties.
-
 Change Date:          2026-06-31
 
 Change License:       Apache License, Version 2.0
-
+```
 For information about alternative licensing arrangements for the Software,
 please visit: not available, for future reference.
 
-Notice
+## Notice
 
 The Business Source License (this document, or the "License") is not an Open
 Source license. However, the Licensed Work will eventually be made available
@@ -29,11 +29,9 @@ under an Open Source License, as stated in this License.
 License text copyright (c) 2017 MariaDB Corporation Ab, All Rights Reserved.
 "Business Source License" is a trademark of MariaDB Corporation Ab.
 
------------------------------------------------------------------------------
+# Business Source License 1.1
 
-Business Source License 1.1
-
-Terms
+## Terms
 
 The Licensor hereby grants you the right to copy, modify, create derivative
 works, redistribute, and make non-production use of the Licensed Work. The
@@ -79,7 +77,7 @@ MariaDB hereby grants you permission to use this License’s text to license
 your works, and to refer to it using the trademark "Business Source License",
 as long as you comply with the Covenants of Licensor below.
 
-Covenants of Licensor
+## Covenants of Licensor
 
 In consideration of the right to use this License’s text and the "Business
 Source License" name and trademark, Licensor covenants to MariaDB, and to all
