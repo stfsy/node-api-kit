@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.9.0...v0.10.0) (2023-08-16)
+
+
+### Features
+
+* **configuration:** add method to check for env development ([a2b4341](https://github.com/stfsy/node-api-kit/issues/commit/a2b4341e535164d6452889eafbda20a40025fba9))
+
+
+### Refactorings
+
+* **tracing:** add prepare attributes method ([ba098bc](https://github.com/stfsy/node-api-kit/issues/commit/ba098bc0feeeb3b1937391d2dba91d7e6f73b0ab))
+
+
+### Chores
+
+* add bodyparser and encoder middleware ([e5f0e21](https://github.com/stfsy/node-api-kit/issues/commit/e5f0e218b24b78f61768a0b9588bfc28ed9b1e14))
+* **deps-dev:** bump eslint from 8.46.0 to 8.47.0 ([977da22](https://github.com/stfsy/node-api-kit/issues/commit/977da22adf9e259431c111e5e3a9494f44e9116d))
+* **logger:** use pino-pretty only if env is development ([62acf58](https://github.com/stfsy/node-api-kit/issues/commit/62acf5822dfabbcc8230297274c1b319f8ad9d03))
+* **package:** remove start script ([7cb2eb7](https://github.com/stfsy/node-api-kit/issues/commit/7cb2eb79775dcba1decc03978a14b8a1c8110a88))
+* run api script and add NODE_ENV var ([9e1adc5](https://github.com/stfsy/node-api-kit/issues/commit/9e1adc57d487587b2c5c61d51771295f2e87f57c))
+* update license ([32da931](https://github.com/stfsy/node-api-kit/issues/commit/32da931ddfdf4cbef7521e08064916711ba9eb00))
+
 ## [0.9.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.8.0...v0.9.0) (2023-08-12)
 
 
