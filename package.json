@@ -48,7 +48,6 @@
     "url": "https://github.com/stfsy/node-api-kit/issues"
   },
   "scripts": {
-    "start": "functions-framework --target=api --signature-type=http",
     "test": "mocha --timeout 10000 test/**/*spec.js --file test/global-mocha-setup.js",
     "test:ci": "npm run test -- --forbid-only",
     "coverage": "nyc c8 --100 npm run test:ci",
