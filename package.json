@@ -54,10 +54,11 @@
     "lint": "npx eslint -c .eslintrc.cjs lib --ext .js,.jsx,.ts,.tsx",
     "lint-test": "npx eslint -c .eslintrc.cjs test --ext .js,.jsx,.ts,.tsx",
     "standard-version": "standard-version",
+    "remove-types": "find lib -name \"*.d.ts\" -type f -delete",
     "create-types": "npx tsc lib/index.js --declaration --emitDeclarationOnly --allowJs",
     "publish-version": "npm publish --access public",
     "push-tags": "git push --follow-tags origin main",
-    "release-generic": "npm run push-tags && npm run create-types && npm run publish-version",
+    "release-generic": "npm run push-tags && npm run create-types && npm run publish-version && npm run remove-types",
     "release-minor": "npm run standard-version -- --release-as minor && npm run release-generic",
     "release-major": "npm run standard-version -- --release-as major && npm run release-generic"
   },
