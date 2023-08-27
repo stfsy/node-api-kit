@@ -9,17 +9,17 @@ Kickstarts your API by providing out-of-the-box implementations for must-have mo
 - [Validation Schemas](README_VALIDATION_SCHEMA.md)
 
 ## Middlewares
-By default, six `cross-cutting` middlewares are configured. These build the foundation for a secure API.
+By default, nine `cross-cutting` middlewares are configured. These build the foundation for a secure API.
 
-- ✅ `traceContext`: Generates a random id per request and makes this id available to all application components
-- ✅ `contentType`: Validates the incoming content type, if the request method implies a state change e.g. POST
 - ✅ `accessLog`: Logs each incoming request to give insights about usage and response times
-- ✅ `defaultVersion`: Allows to move clients to a different API version in case of e.g. security incidents
-- ✅ `securityHeaders`: Adds additional security headers to the response to prevent common attacks and protect users and their data
-- ✅ `cors`: Adds additional headers to the response to protect from cross-origin resource requests and data exposure
 - ✅ `bodyParser`: Parses incoming JSON request bodies into a JavaScript objects
+- ✅ `contentType`: Validates the incoming content type, if the request method implies a state change e.g. POST
+- ✅ `cors`: Adds additional headers to the response to protect from cross-origin resource requests and data exposure
+- ✅ `defaultVersion`: Allows to move clients to a different API version in case of e.g. security incidents
 - ✅ `htmlEncoder`: Encodes HTML embedded in request and response payloads to mitigate XSS attacks
-
+- ✅ `securityHeaders`: Adds additional security headers to the response to prevent common attacks and protect users and their data
+- ✅ `traceContext`: Generates a random id per request and makes this id available to all application components
+- ✅ `upstreamCacheControl`: Instructs proxy servers between the client and the API to not cache responses
 
 ## Tracing
 All `http-endpoint`, most of `middleware` and `util` components come with [OpenTelemetry Tracing](https://opentelemetry.io/docs/concepts/signals/traces/) enabled
