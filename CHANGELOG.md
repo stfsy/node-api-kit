@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.11.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.10.0...v0.11.0) (2023-08-27)
+
+
+### Features
+
+* add upstreamCacheControl middleware ([fcae331](https://github.com/stfsy/node-api-kit/issues/commit/fcae331c71bbd7b3b0ab6351ba90f635679ee971))
+
+
+### Chores
+
+* **deps:** bump @opentelemetry/instrumentation-aws-lambda ([b8ac409](https://github.com/stfsy/node-api-kit/issues/commit/b8ac409b3dd61006cc4ccc3b0a5f63e9c5429459))
+* **deps:** bump @opentelemetry/instrumentation-dns ([9af7207](https://github.com/stfsy/node-api-kit/issues/commit/9af7207b5780f87311f30419f6b942a4d6b93f79))
+* **deps:** bump @opentelemetry/instrumentation-fs from 0.8.0 to 0.8.1 ([84acfef](https://github.com/stfsy/node-api-kit/issues/commit/84acfef40bda7c103d1c1355fa8b6ec4a1148291))
+* **deps:** bump @opentelemetry/instrumentation-mongodb ([7f7756f](https://github.com/stfsy/node-api-kit/issues/commit/7f7756f2577d319f391bbc41449b5d3ea51c80e7))
+* **deps:** bump @opentelemetry/instrumentation-net ([35018fd](https://github.com/stfsy/node-api-kit/issues/commit/35018fd35322b7386cf5c11e5fd50e5df9239ca8))
+* **deps:** updae dependencies ([67b9662](https://github.com/stfsy/node-api-kit/issues/commit/67b9662620d814f29c8fdad5cd5ab0f81b179b91))
+* **docs:** update middlewares in readme ([86b772a](https://github.com/stfsy/node-api-kit/issues/commit/86b772a4d179f25df80e70d85091b18ba1f10c85))
+* remove types after publishing ([144070c](https://github.com/stfsy/node-api-kit/issues/commit/144070cb01703a4aa2577d1cb8368ad8faee2965))
+
 ## [0.10.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.9.0...v0.10.0) (2023-08-16)
 
 
