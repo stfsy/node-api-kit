@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.11.0...v0.12.0) (2023-09-03)
+
+
+### Features
+
+* add normalize request middleware ([aa11d90](https://github.com/stfsy/node-api-kit/issues/commit/aa11d90073eb8e3b0e33c698048eacbf90227b79))
+
+
+### Chores
+
+* **deps:** bump actions/checkout from 3.5.3 to 3.6.0 ([87881c1](https://github.com/stfsy/node-api-kit/issues/commit/87881c15bedaaa4019761cbe1338cde6b216201a))
+* **deps:** update dependencies ([d3d545e](https://github.com/stfsy/node-api-kit/issues/commit/d3d545e5e74ddb4f931090d74ecae6dfa4ab7347))
+
 ## [0.11.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.10.0...v0.11.0) (2023-08-27)
 
 
