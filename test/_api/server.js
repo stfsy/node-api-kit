@@ -1,6 +1,6 @@
 import express from 'express';
 import { sendNotFound } from '../../lib/http/send-http-error.js';
-import { accessLog, bodyParser, contentType, defaultVersion, htmlEncoder, securityHeaders, upstreamCacheControl } from '../../lib/middlewares/index.js';
+import { accessLog, bodyParser, contentType, defaultVersion, htmlEncoder, normalizeRequest, securityHeaders, upstreamCacheControl } from '../../lib/middlewares/index.js';
 import queueEndpoints from './queues/endpoints.js';
 
 export default () => {
@@ -9,6 +9,7 @@ export default () => {
     app.use(accessLog())
     app.use(securityHeaders())
     app.use(contentType())
+    app.use(normalizeRequest())
     app.use(defaultVersion())
     app.use(bodyParser())
     app.use(upstreamCacheControl())
