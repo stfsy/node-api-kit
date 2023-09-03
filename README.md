@@ -9,7 +9,7 @@ Kickstarts your API by providing out-of-the-box implementations for must-have mo
 - [Validation Schemas](README_VALIDATION_SCHEMA.md)
 
 ## Middlewares
-By default, nine `cross-cutting` middlewares are configured. These build the foundation for a secure API.
+By default, ten `cross-cutting` middlewares are configured. These build the foundation for a secure API.
 
 - ✅ `accessLog`: Logs each incoming request to give insights about usage and response times
 - ✅ `bodyParser`: Parses incoming JSON request bodies into a JavaScript objects
@@ -17,6 +17,7 @@ By default, nine `cross-cutting` middlewares are configured. These build the fou
 - ✅ `cors`: Adds additional headers to the response to protect from cross-origin resource requests and data exposure
 - ✅ `defaultVersion`: Allows to move clients to a different API version in case of e.g. security incidents
 - ✅ `htmlEncoder`: Encodes HTML embedded in request and response payloads to mitigate XSS attacks
+- ✅ `normalizeRequest`: Ensures request attributes are similar across requests e.g. removes a trailing slash
 - ✅ `securityHeaders`: Adds additional security headers to the response to prevent common attacks and protect users and their data
 - ✅ `traceContext`: Generates a random id per request and makes this id available to all application components
 - ✅ `upstreamCacheControl`: Instructs proxy servers between the client and the API to not cache responses
