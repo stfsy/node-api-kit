@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.12.0...v0.13.0) (2023-09-07)
+
+
+### Refactorings
+
+* **endpoints:** handle all validation logic in base class ([00a74aa](https://github.com/stfsy/node-api-kit/issues/commit/00a74aabdf16335b787c3934e72736fe5a1febe3))
+
+
+### Chores
+
+* **deps:** bump actions/checkout from 3.6.0 to 4.0.0 ([540acd6](https://github.com/stfsy/node-api-kit/issues/commit/540acd60b2337151b7fc64ebb0880851df6db5b9))
+* **http-errors:** export generic send http error function ([543251e](https://github.com/stfsy/node-api-kit/issues/commit/543251eaeed9795c20d9814aa818f812081b4b61))
+* **resource-endpoint:** validate also if content-length sent ([9e5d125](https://github.com/stfsy/node-api-kit/issues/commit/9e5d125d3d299e24c449d1f116055a811f531013))
+* **resource-validator:** update validation result type ([3f755fe](https://github.com/stfsy/node-api-kit/issues/commit/3f755fea89c57f53c28cd8a48a9e7680b51ef909))
+
 ## [0.12.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.11.0...v0.12.0) (2023-09-03)
 
 
