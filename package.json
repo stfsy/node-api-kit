@@ -89,7 +89,7 @@
     "html-entities": "^2.4.0",
     "jsonwebtoken": "^9.0.2",
     "nanoid": "^4.0.2",
-    "pino": "^8.15.0",
+    "pino": "^8.15.1",
     "re2": "^1.20.3",
     "snake-case": "^3.0.4"
   },
