@@ -67,7 +67,7 @@
   "license": "BUSL-1.1",
   "dependencies": {
     "@opentelemetry/api": "^1.4.1",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.41.2",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.42.0",
     "@opentelemetry/instrumentation": "^0.41.2",
     "@opentelemetry/instrumentation-aws-lambda": "^0.37.0",
     "@opentelemetry/instrumentation-dns": "^0.32.2",
