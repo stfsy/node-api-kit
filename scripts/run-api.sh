@@ -11,4 +11,5 @@ export K_SERVICE=test-service
 export NODE_ENV=development
 export NODE_OPTIONS="--require ./tracing/tracing.cjs --trace-warnings"
 
+export DSQ_OT_USE_SIMPLE_SPAN_PROCESSOR=true
 npx nodemon lib/api
