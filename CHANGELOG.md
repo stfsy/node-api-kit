@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.14.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.13.0...v0.14.0) (2023-09-20)
+
+
+### Features
+
+* add function to read package.json ([dbab616](https://github.com/stfsy/node-api-kit/issues/commit/dbab6163c32a6ff38942d5771e8526770281ecbb))
+* add package name as prefix to all spans ([3d7e673](https://github.com/stfsy/node-api-kit/issues/commit/3d7e6730dc55230dbfed67f7ca1e5605a399c4ce))
+
+
+### Chores
+
+* **ci:** decrease test timeout to 5 min ([b5d0559](https://github.com/stfsy/node-api-kit/issues/commit/b5d0559d21c1a4ba6e369d7bdec13381bc90415d))
+* **ci:** use lts node ([133d537](https://github.com/stfsy/node-api-kit/issues/commit/133d537ddfa78b8a3a08f512c68c7d08c4a37430))
+* **deps-dev:** bump eslint from 8.48.0 to 8.49.0 ([3a338ae](https://github.com/stfsy/node-api-kit/issues/commit/3a338ae4c08e78f4fee0e957a2f39694e265059a))
+* **deps:** bump @opentelemetry/exporter-trace-otlp-http ([b538b9c](https://github.com/stfsy/node-api-kit/issues/commit/b538b9c658a3e1b757e7624fc5700363c016c135))
+* **deps:** bump @opentelemetry/instrumentation-http ([87922b2](https://github.com/stfsy/node-api-kit/issues/commit/87922b274e8588693bb1baee28d962b3150dce86))
+* **deps:** bump @opentelemetry/sdk-trace-node from 1.15.2 to 1.16.0 ([a8e6dad](https://github.com/stfsy/node-api-kit/issues/commit/a8e6dada663e68fce33f14d0a7fbe656e2b232e5))
+* **deps:** bump pino from 8.15.0 to 8.15.1 ([02d9237](https://github.com/stfsy/node-api-kit/issues/commit/02d9237ceece747ee83c813d26b211fd3211d57f))
+* **deps:** update nanoid ([2e78ff9](https://github.com/stfsy/node-api-kit/issues/commit/2e78ff9111a1289c149a2b52b468b9adf74a5226))
+* **deps:** update open telemetry tracing ([ef37c52](https://github.com/stfsy/node-api-kit/issues/commit/ef37c52999310dee89a1d746aec8b743942dd1c4))
+* **deps:** update open telemetry tracing ([300fcb9](https://github.com/stfsy/node-api-kit/issues/commit/300fcb902ed7024a91a07a31d0d4b5a2cbcf4992))
+* fix typo in span name ([e226ebd](https://github.com/stfsy/node-api-kit/issues/commit/e226ebd62e02115ac5b052b18909603f11a639f6))
+* move tracing implementation to discue open telemetry module ([ef30e6d](https://github.com/stfsy/node-api-kit/issues/commit/ef30e6d571aefe1dceafa072137f4643bfea904d))
+
 ## [0.13.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.12.0...v0.13.0) (2023-09-07)
 
 
