@@ -77,7 +77,7 @@
     "jsonwebtoken": "^9.0.2",
     "nanoid": "^5.0.3",
     "pino": "^8.16.1",
-    "re2": "^1.20.5",
+    "re2": "^1.20.8",
     "snake-case": "^4.0.0"
   },
   "devDependencies": {
