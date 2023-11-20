@@ -76,7 +76,7 @@
     "html-entities": "^2.4.0",
     "jsonwebtoken": "^9.0.2",
     "nanoid": "^5.0.3",
-    "pino": "^8.16.1",
+    "pino": "^8.16.2",
     "re2": "^1.20.8",
     "snake-case": "^4.0.0"
   },
