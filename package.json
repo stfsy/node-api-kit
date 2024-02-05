@@ -75,7 +75,7 @@
     "helmet": "^7.1.0",
     "html-entities": "^2.4.0",
     "jsonwebtoken": "^9.0.2",
-    "nanoid": "^5.0.4",
+    "nanoid": "^5.0.5",
     "pino": "^8.17.2",
     "re2": "^1.20.9",
     "snake-case": "^4.0.0"
