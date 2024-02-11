@@ -1,6 +1,6 @@
 {
   "name": "@stfsy/api-kit",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Simple scheduling and queueing",
   "engines": {
     "node": "18"
