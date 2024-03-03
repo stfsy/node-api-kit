@@ -3,7 +3,7 @@
   "version": "0.15.0",
   "description": "Simple scheduling and queueing",
   "engines": {
-    "node": "18"
+    "node": ">= 18"
   },
   "files": [
     "lib",
