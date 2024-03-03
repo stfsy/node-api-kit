@@ -1,25 +1,34 @@
 #!/bin/bash
 
-function cleanup() {
-  ./scripts/stop-jaeger-with-docker.sh
+set -ex
+
+test() {
+    # do not allow --only if running on cicd environment
+    if [[ -z "${GITHUB_ACTIONS}" ]]; then
+        npm run test
+    else
+        npm run test:ci
+    fi
 }
 
-trap cleanup EXIT
+# check whether we are connected to the internet
+# before downloading dependencies
+resetDependencies() {
+    # reset tracing dependencies only if we are not running on GH
+    if [[ -z "${GITHUB_ACTIONS}" ]]; then
+        npm un @discue/open-telemetry-tracing
+        npm -D i @discue/open-telemetry-tracing
+    fi
+}
 
-# check whether jaeger is running
-curl --head http://127.0.0.1:16686 &>"/dev/null"
-if [[ "${?}" -ne 0 ]]; then
-    echo "Jaeger container is not running. Starting it then"
-    ./scripts/run-jaeger-with-docker.sh
+test
 
-elif [[ "${#args[@]}" -eq 0 ]]; then
-    echo "Ensuring we are connected to firebase DEFAULT project"
-    npx firebase use ci 
-fi
-
-# do not allow --only if running on cicd environment
-if [[ -z "${GITHUB_ACTIONS}" ]]; then
-  npm run test
-else
-  npm run test:ci
+curl --head www.google.com &>"/dev/null"
+if [[ "${?}" == 0 ]]; then
+    trap resetDependencies ERR EXIT
+    
+    # test with noop tracing library now
+    npm i -D @discue/open-telemetry-tracing@npm:@discue/open-telemetry-tracing-noop
+    
+    test
 fi
