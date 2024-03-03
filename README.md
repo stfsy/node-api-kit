@@ -8,6 +8,19 @@ Kickstarts your API by providing out-of-the-box implementations for must-have mo
 - [Validation](README_VALIDATION.md)
 - [Validation Schemas](README_VALIDATION_SCHEMA.md)
 
+## Installation
+This module has built-in support for tracing via Open Telemetry. The necessary dependencies are not declared in the module's `package.json` to allow applications to enable or disable the tracing feature.
+
+### Install with support for tracing
+```bash
+npm i @stfsy/api-kit @discue/open-telemetry-tracing
+```
+
+### Install without tracing features
+```bash
+npm i @stfsy/api-kit @discue/open-telemetry-tracing@npm:@discue/open-telemetry-tracing-noop
+```
+
 ## Middlewares
 By default, ten `cross-cutting` middlewares are configured. These build the foundation for a secure API.
 
