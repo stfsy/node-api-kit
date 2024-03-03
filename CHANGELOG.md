@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.16.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.15.0...v0.16.0) (2024-03-03)
+
+
+### Features
+
+* enable users to use telemetry noop package ([904fe12](https://github.com/stfsy/node-api-kit/issues/commit/904fe128040fa910c8e51d2d5b65f0bd99f7836d))
+
+
+### Chores
+
+* **deps-dev:** bump chai from 5.0.3 to 5.1.0 ([5714099](https://github.com/stfsy/node-api-kit/issues/commit/5714099d11cb1a22d951b0c9a0a17a83cb540a6c))
+* **deps-dev:** bump eslint from 8.56.0 to 8.57.0 ([2ba97e7](https://github.com/stfsy/node-api-kit/issues/commit/2ba97e74a37ca0c892a8b228628000bcaebdce80))
+* **deps-dev:** bump nodemon from 3.0.3 to 3.1.0 ([0b0bd68](https://github.com/stfsy/node-api-kit/issues/commit/0b0bd685cc511e3ecc027198b00b9688891eb27c))
+* **deps:** bump ip from 2.0.0 to 2.0.1 ([50a1dc1](https://github.com/stfsy/node-api-kit/issues/commit/50a1dc1ea9169f10247a7068ebcd01eace757ffa))
+* **deps:** bump nanoid from 5.0.5 to 5.0.6 ([d57e0dd](https://github.com/stfsy/node-api-kit/issues/commit/d57e0dd6ebb8b14c265083750ed85227726d68a8))
+* **deps:** bump pino from 8.18.0 to 8.19.0 ([af9792d](https://github.com/stfsy/node-api-kit/issues/commit/af9792d528b72803084d4fd126ce31486d4ac766))
+* **deps:** mark newest tracing dep as dev dep ([60ecf28](https://github.com/stfsy/node-api-kit/issues/commit/60ecf287404500aaf54d8c03de25f6239f23c7c6))
+* **deps:** remove bcrypt ([d0634a6](https://github.com/stfsy/node-api-kit/issues/commit/d0634a69d60574729a4a7adb3799a076a9b0aab9))
+* **deps:** remove unused jsonwebtoken dependency ([4201663](https://github.com/stfsy/node-api-kit/issues/commit/4201663667c64b7b468da445a9c9f6880faf3791))
+* **docs:** add info about telemetry noop ([5d8e473](https://github.com/stfsy/node-api-kit/issues/commit/5d8e47368da9d09c5eb12b3529d90b9635030a90))
+* **tests:** run also with open telemetry noop ([f3b9d9e](https://github.com/stfsy/node-api-kit/issues/commit/f3b9d9e09a4a2aad4249c891cf894c1df40ae416))
+* update engine specification ([1c1585c](https://github.com/stfsy/node-api-kit/issues/commit/1c1585c8d72bc94009b21cdb4589ab43d967990a))
+
 ## [0.15.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.14.0...v0.15.0) (2024-02-11)
 
 
