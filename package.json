@@ -74,7 +74,7 @@
     "html-entities": "^2.5.2",
     "nanoid": "^5.0.6",
     "pino": "^8.19.0",
-    "re2": "^1.20.9",
+    "re2": "^1.20.10",
     "snake-case": "^4.0.0"
   },
   "devDependencies": {
