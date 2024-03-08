@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.17.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.16.0...v0.17.0) (2024-03-08)
+
+
+### Chores
+
+* **deps:** bump express from 4.18.2 to 4.18.3 ([0519d85](https://github.com/stfsy/node-api-kit/issues/commit/0519d8586d122f8d5ac90ad766f660b00f286c9f))
+* **deps:** bump html-entities from 2.4.0 to 2.5.2 ([03e93eb](https://github.com/stfsy/node-api-kit/issues/commit/03e93eb800953db4239038d14eb98baee3fc070c))
+* **deps:** bump re2 from 1.20.9 to 1.20.10 ([3e0c376](https://github.com/stfsy/node-api-kit/issues/commit/3e0c37644dc0c7f33329b9794f5145c8a7e721ef))
+* store ip access sync again ([c63e578](https://github.com/stfsy/node-api-kit/issues/commit/c63e57872752fc89d80595e64fbbec142549ce56))
+
 ## [0.16.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.15.0...v0.16.0) (2024-03-03)
 
 
