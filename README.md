@@ -7,6 +7,7 @@ Kickstarts your API by providing out-of-the-box implementations for must-have mo
 - [HTTP Endpoints](README_HTTP_ENDPOINTS.md)
 - [Validation](README_VALIDATION.md)
 - [Validation Schemas](README_VALIDATION_SCHEMA.md)
+- [Caveats](README_CAVEATS.md)
 
 ## Installation
 This module has built-in support for tracing via Open Telemetry. The necessary dependencies are not declared in the module's `package.json` to allow applications to enable or disable the tracing feature.
