@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.18.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.17.0...v0.18.0) (2024-03-18)
+
+
+### Bug Fixes
+
+* **rate-limit:** next call causes http error ([5266b7b](https://github.com/stfsy/node-api-kit/issues/commit/5266b7b19ac21e8f649367735d30c4d535cd7444))
+
+
+### Chores
+
+* **deps-dev:** bump typescript from 5.3.3 to 5.4.2 ([426f3e5](https://github.com/stfsy/node-api-kit/issues/commit/426f3e59c4c829036e24cad9be965c4535406cdf))
+* **deps:** bump actions/checkout from 4.1.1 to 4.1.2 ([2059cf2](https://github.com/stfsy/node-api-kit/issues/commit/2059cf22194abd98ee88014e342d1a520bda3693))
+* **deps:** bump softprops/action-gh-release from 1 to 2 ([04d2dc7](https://github.com/stfsy/node-api-kit/issues/commit/04d2dc7fb12ca843d15d540b74a2efe6a0921eb6))
+* **deps:** update dependencies ([94b4ddc](https://github.com/stfsy/node-api-kit/issues/commit/94b4ddc71047d9feafdf6f9eb93ca5d4fdd1b093))
+
 ## [0.17.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.16.0...v0.17.0) (2024-03-08)
 
 
