@@ -1,6 +1,6 @@
 import { expect } from "chai";
-import validator from '../../lib/validation/validator.js';
-import { useNotAllowedDuringCreationValidator } from "../../lib/validation/validators/not-allowed-for-creation-field-validator.js";
+import validator from '../../../lib/validation/validator.js';
+import { useNotAllowedDuringCreationValidator } from "../../../lib/validation/validators/not-allowed-for-creation-field-validator.js";
 
 describe('ImmutableFieldValidator', () => {
 

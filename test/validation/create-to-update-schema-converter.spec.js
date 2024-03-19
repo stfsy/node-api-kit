@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { converter } from "../../../lib/validation/create-to-update-schema-converter.js";
+import { converter } from "../../lib/validation/create-to-update-schema-converter.js";
 
 describe('CreateToUpdateSchemaConverter', () => {
 
