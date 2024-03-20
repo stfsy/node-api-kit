@@ -4,6 +4,11 @@ import { useImmutableFieldValidator } from "../../../lib/validation/validators/i
 
 describe('ImmutableFieldValidator', () => {
 
+    it('does not require a schema', async () => {
+        const schema = useImmutableFieldValidator()
+        expect(schema.__validator).to.equal('api-kit/ImmutableFieldValidator')
+    })
+
     it('sets the private validator name property', async () => {
         const schema = useImmutableFieldValidator({})
         expect(schema.__validator).to.equal('api-kit/ImmutableFieldValidator')

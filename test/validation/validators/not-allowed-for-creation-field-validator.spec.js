@@ -4,6 +4,11 @@ import { useNotAllowedDuringCreationValidator } from "../../../lib/validation/va
 
 describe('ImmutableFieldValidator', () => {
 
+    it('does not require a schema', async () => {
+        const schema = useNotAllowedDuringCreationValidator()
+        expect(schema.__validator).to.equal('api-kit/NotAllowedForCreationValidator')
+    })
+
     it('sets the private validator name property', async () => {
         const schema = useNotAllowedDuringCreationValidator({})
         expect(schema.__validator).to.equal('api-kit/NotAllowedForCreationValidator')
