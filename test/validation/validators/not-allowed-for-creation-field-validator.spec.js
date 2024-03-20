@@ -4,6 +4,21 @@ import { useNotAllowedDuringCreationValidator } from "../../../lib/validation/va
 
 describe('ImmutableFieldValidator', () => {
 
+    it('sets the private validator name property', async () => {
+        const schema = useNotAllowedDuringCreationValidator({})
+        expect(schema.__validator).to.equal('api-kit/NotAllowedForCreationValidator')
+    })
+
+    it('defines the property as optional', async () => {
+        const schema = useNotAllowedDuringCreationValidator({})
+        expect(schema.optional).to.be.true
+    })
+
+    it('defines the property as immutable', async () => {
+        const schema = useNotAllowedDuringCreationValidator({})
+        expect(schema.immutable).to.be.true
+    })
+
     it('provides a schema with type custom', () => {
         const schema = useNotAllowedDuringCreationValidator({})
         expect(schema.type).to.equal('custom')
@@ -23,7 +38,7 @@ describe('ImmutableFieldValidator', () => {
 
     it('validates if target value is falsy', async () => {
         const resourceIdValidator = validator.compile({ name: useNotAllowedDuringCreationValidator({}) })
-        const result = await resourceIdValidator({ })
+        const result = await resourceIdValidator({})
         expect(result).to.be.true
     })
 })

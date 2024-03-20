@@ -8,6 +8,12 @@ const nanoid = customAlphabet(resourceIdAlphabet)
 
 describe('ResourceIdValidator', () => {
 
+    
+    it('sets the private validator name property', async () => {
+        const schema = useResourceIdValidator({})
+        expect(schema.__validator).to.equal('api-kit/ResourceIdValidator')
+    })
+
     it('provides a schema for resource ids', () => {
         const schema = useResourceIdValidator()
         expect(schema.$$root).to.equal(true)
