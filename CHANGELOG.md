@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.19.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.18.0...v0.19.0) (2024-03-20)
+
+
+### Features
+
+* **validators:** do not require schema ([8533e43](https://github.com/stfsy/node-api-kit/issues/commit/8533e43d702081e54a0416ae7898d6cb9010354f))
+
+
+### Bug Fixes
+
+* **html-encoder:** fix unable to disable middleware via options object ([6ff8b22](https://github.com/stfsy/node-api-kit/issues/commit/6ff8b226354da1d9d1a14283581a0e6d14f7ec82))
+* **validator:** automatically generated fields are not marked as optional ([a0ff5ce](https://github.com/stfsy/node-api-kit/issues/commit/a0ff5cef053a69b6fca4aa34ab98928986129067))
+
+
+### Refactorings
+
+* move tests to expected folder ([d1f7aa2](https://github.com/stfsy/node-api-kit/issues/commit/d1f7aa291c993ac9b20ad3cd44c86dfeeae3cf0c))
+
+
+### Chores
+
+* **docs:** add caveats docs ([6bc9f4e](https://github.com/stfsy/node-api-kit/issues/commit/6bc9f4e7ad2dfb18a9a518fed0d4ff55cce942c0))
+* **html-encoder:** do not encode responses by default ([6ac5d16](https://github.com/stfsy/node-api-kit/issues/commit/6ac5d160cc44383ac395ae9ba361c56e1b2b93fc))
+* **validators:** add validator name to all validators ([2769b34](https://github.com/stfsy/node-api-kit/issues/commit/2769b3475cd88709a420e3f48b68e427e6af3a32))
+
 ## [0.18.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.17.0...v0.18.0) (2024-03-18)
 
 
