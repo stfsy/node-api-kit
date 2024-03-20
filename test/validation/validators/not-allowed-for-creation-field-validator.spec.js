@@ -20,4 +20,10 @@ describe('ImmutableFieldValidator', () => {
         const result = await resourceIdValidator({ name: 'test' })
         expect(result.at(0).type).to.equal('fieldNoCreationViaApi')
     })
+
+    it('validates if target value is falsy', async () => {
+        const resourceIdValidator = validator.compile({ name: useNotAllowedDuringCreationValidator({}) })
+        const result = await resourceIdValidator({ })
+        expect(result).to.be.true
+    })
 })
