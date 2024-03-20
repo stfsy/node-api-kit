@@ -23,7 +23,9 @@ describe('HtmlEncoder', () => {
                     done()
                 }
             })
-            const handler = htmlEncoder()
+            const handler = htmlEncoder({
+                encodeResponsePayload: true
+            })
             handler({}, res, () => { })
             res.status(200).send({
                 name: '<alert>Hello</alert>',
@@ -109,7 +111,8 @@ describe('HtmlEncoder', () => {
                 }
             })
             const handler = htmlEncoder({
-                encodeRequestPayload: false
+                encodeRequestPayload: false,
+                encodeResponsePayload: true
             })
             handler(null, res, () => { })
             res.status(200).send('<alert>Hello</alert>')
@@ -124,7 +127,8 @@ describe('HtmlEncoder', () => {
                 }
             })
             const handler = htmlEncoder({
-                encodeRequestPayload: false
+                encodeRequestPayload: false,
+                encodeResponsePayload: true
             })
             handler(null, res, () => { })
             res.status(200).send({
