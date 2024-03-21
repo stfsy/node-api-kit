@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.20.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.19.0...v0.20.0) (2024-03-21)
+
+
+### Features
+
+* **validator:** add new validation messages ([dd4e4d1](https://github.com/stfsy/node-api-kit/issues/commit/dd4e4d198d4970f70e32d64a015d256a63d83e8c))
+
 ## [0.19.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.18.0...v0.19.0) (2024-03-20)
 
 
