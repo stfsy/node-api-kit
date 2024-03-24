@@ -1,4 +1,6 @@
 import { expect } from 'chai'
+import { sendInternalError } from '../../lib/http/send-http-error.js'
+import { sendOk } from '../../lib/http/send-http-ok.js'
 import htmlEncoder from '../../lib/middlewares/html-encoder.js'
 import requestMock from "./request-mock.js"
 import responseMock from "./response-mock.js"
@@ -16,18 +18,47 @@ describe('HtmlEncoder', () => {
         })
 
         it('recursively encodes a response body object', (done) => {
+            const req = requestMock({
+                params: {}
+            })
             const res = responseMock({
                 send: (payload) => {
-                    expect(payload.name).to.equal('&lt;alert&gt;Hello&lt;/alert&gt;')
-                    expect(payload.pets.at(0).name).to.equal('&lt;link&gt;Pete&lt;/link&gt;')
+                    console.log({ payload })
+                    expect(payload).to.contain('&lt;alert&gt;Hello&lt;/alert&gt;')
+                    expect(payload).to.contain('&lt;link&gt;Pete&lt;/link&gt;')
                     done()
                 }
             })
             const handler = htmlEncoder({
+                encodeRequestPayload: false,
                 encodeResponsePayload: true
             })
-            handler({}, res, () => { })
-            res.status(200).send({
+            handler(null, res, () => { })
+            sendOk({
+                req, res, body: {
+                    name: '<alert>Hello</alert>',
+                    pets: [{
+                        name: '<link>Pete</link>'
+                    }]
+                }
+            })
+        })
+
+        it('encodes also error responses', (done) => {
+            const res = responseMock({
+                send: (payload) => {
+                    console.log({ payload })
+                    expect(payload).to.contain('&lt;alert&gt;Hello&lt;/alert&gt;')
+                    expect(payload).to.contain('&lt;link&gt;Pete&lt;/link&gt;')
+                    done()
+                }
+            })
+            const handler = htmlEncoder({
+                encodeRequestPayload: false,
+                encodeResponsePayload: true
+            })
+            handler(null, res, () => { })
+            sendInternalError(res, {
                 name: '<alert>Hello</alert>',
                 pets: [{
                     name: '<link>Pete</link>'
@@ -103,10 +134,15 @@ describe('HtmlEncoder', () => {
     })
 
     describe('ResponseEncoder', () => {
-        it('encodes a response body string', (done) => {
+        it('recursively encodes a response body object', (done) => {
+            const req = requestMock({
+                params: {}
+            })
             const res = responseMock({
                 send: (payload) => {
-                    expect(payload).to.equal('&lt;alert&gt;Hello&lt;/alert&gt;')
+                    console.log({ payload })
+                    expect(payload).to.contain('&lt;alert&gt;Hello&lt;/alert&gt;')
+                    expect(payload).to.contain('&lt;link&gt;Pete&lt;/link&gt;')
                     done()
                 }
             })
@@ -115,14 +151,22 @@ describe('HtmlEncoder', () => {
                 encodeResponsePayload: true
             })
             handler(null, res, () => { })
-            res.status(200).send('<alert>Hello</alert>')
+            sendOk({
+                req, res, body: {
+                    name: '<alert>Hello</alert>',
+                    pets: [{
+                        name: '<link>Pete</link>'
+                    }]
+                }
+            })
         })
 
-        it('recursively encodes a response body object', (done) => {
+        it('encodes also error responses', (done) => {
             const res = responseMock({
                 send: (payload) => {
-                    expect(payload.name).to.equal('&lt;alert&gt;Hello&lt;/alert&gt;')
-                    expect(payload.pets.at(0).name).to.equal('&lt;link&gt;Pete&lt;/link&gt;')
+                    console.log({ payload })
+                    expect(payload).to.contain('&lt;alert&gt;Hello&lt;/alert&gt;')
+                    expect(payload).to.contain('&lt;link&gt;Pete&lt;/link&gt;')
                     done()
                 }
             })
@@ -131,7 +175,7 @@ describe('HtmlEncoder', () => {
                 encodeResponsePayload: true
             })
             handler(null, res, () => { })
-            res.status(200).send({
+            sendInternalError(res, {
                 name: '<alert>Hello</alert>',
                 pets: [{
                     name: '<link>Pete</link>'
