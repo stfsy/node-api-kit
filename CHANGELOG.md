@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.21.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.20.0...v0.21.0) (2024-04-06)
+
+
+### Features
+
+* **html-encoder:** enable response encoding again by default ([e78fec8](https://github.com/stfsy/node-api-kit/issues/commit/e78fec84e8a783e9087be4912e495ecaede0f555))
+* **html-encoder:** ensure also http errors are encoded ([2d69058](https://github.com/stfsy/node-api-kit/issues/commit/2d690588b5c96ec786723d8d69150544da2e0184))
+* **validation:** add method to add error name and message ([a063340](https://github.com/stfsy/node-api-kit/issues/commit/a0633404e09b18973d78259f10b70be2a69df1a9))
+* **validation:** export methods to add validation methods ([5cd2e5b](https://github.com/stfsy/node-api-kit/issues/commit/5cd2e5b6e684bfd800616b6101b07a129039f28f))
+
+
+### Chores
+
+* **deps-dev:** bump mocha from 10.3.0 to 10.4.0 ([2e01810](https://github.com/stfsy/node-api-kit/issues/commit/2e018102754967544ea78e58386450d8da67fbda))
+* **deps-dev:** bump pino-pretty from 10.3.1 to 11.0.0 ([4ef533d](https://github.com/stfsy/node-api-kit/issues/commit/4ef533d07fb61e599f8fa8b6f1f94bcfb0f511e6))
+* **deps-dev:** bump typescript from 5.4.2 to 5.4.3 ([d2f4467](https://github.com/stfsy/node-api-kit/issues/commit/d2f44675e665e7291cc1f3b07c098928f1dd285d))
+* **deps:** bump express from 4.18.3 to 4.19.2 ([d6e9535](https://github.com/stfsy/node-api-kit/issues/commit/d6e9535e00749745e76a682bd4e296811fbb215e))
+
 ## [0.20.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.19.0...v0.20.0) (2024-03-21)
 
 
