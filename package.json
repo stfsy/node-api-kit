@@ -69,7 +69,7 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "fastest-validator": "^1.17.0",
+    "fastest-validator": "^1.18.0",
     "helmet": "^7.1.0",
     "html-entities": "^2.5.2",
     "nanoid": "^5.0.7",
