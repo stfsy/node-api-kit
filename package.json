@@ -90,7 +90,7 @@
     "nyc": "^15.1.0",
     "pino-pretty": "^11.0.0",
     "standard-version": "^9.5.0",
-    "supertest": "^6.3.4",
+    "supertest": "^7.0.0",
     "typescript": "^5.4.5"
   }
 }
