@@ -74,15 +74,15 @@
     "helmet": "^7.1.0",
     "html-entities": "^2.5.2",
     "nanoid": "^5.0.7",
-    "pino": "^9.0.0",
-    "re2": "^1.20.10"
+    "pino": "^9.1.0",
+    "re2": "^1.20.11"
   },
   "devDependencies": {
     "@discue/open-telemetry-tracing": "^0.13.0",
     "c8": "^9.1.0",
-    "chai": "^5.1.0",
+    "chai": "^5.1.1",
     "documentation": "^14.0.3",
-    "eslint": "^9.2.0",
+    "eslint": "^9.3.0",
     "http-graceful-shutdown": "^3.1.13",
     "license-check-and-add": "^4.0.5",
     "mocha": "^10.4.0",
