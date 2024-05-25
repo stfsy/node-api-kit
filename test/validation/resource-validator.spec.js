@@ -10,7 +10,7 @@ describe('ResourceValidator', () => {
             expect(validator.messages['abc123']).to.equal('456')
         })
     })
-    describe('addValidationMessages', () => {
+    describe('.addValidationMessages', () => {
         it('adds all keys and values of an object as error messages', () => {
             addValidationMessages({
                 '123': '456',
