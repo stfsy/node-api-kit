@@ -6,6 +6,20 @@ import responseMock from "../middlewares/response-mock.js"
 
 describe('SendHttpOk', () => {
 
+    it('sends also empty arrays', () => {
+        const req = requestMock({})
+        const res = responseMock({
+            send: (responseString) => {
+                const status = res._status()
+                expect(status).to.equal(200)
+                const payload = JSON.parse(responseString)
+                expect(payload.hello).to.have.length(0)
+            }
+        })
+
+        sendOk({ req, res, body: { hello: [] } })
+    })
+
     it('sends http 200 without payload', () => {
         const req = requestMock({})
         const res = responseMock({
