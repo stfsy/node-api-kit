@@ -2,6 +2,83 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.22.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.21.0...v0.22.0) (2024-08-08)
+
+
+### Features
+
+* **resource-validator:** throw before createSchema instance will be reused as updateSchema ([665c660](https://github.com/stfsy/node-api-kit/issues/commit/665c6605943950c1c6cbdedc6a5caf63c3ed48d1))
+
+
+### Bug Fixes
+
+* **string-validator:** fix validation of enums causes app to fail ([51d5fa7](https://github.com/stfsy/node-api-kit/issues/commit/51d5fa7edb80758936702be072033f6c6be72f8f))
+
+
+### Chores
+
+* **ci:** always use npm lint script ([98c57a5](https://github.com/stfsy/node-api-kit/issues/commit/98c57a5744700218baec39c3edc74294b4621bf7))
+* **deps-dev:** bump @discue/open-telemetry-tracing ([3ca182a](https://github.com/stfsy/node-api-kit/issues/commit/3ca182a2890de90b55554e1ce6914f7e17bb5a39))
+* **deps-dev:** bump @discue/open-telemetry-tracing ([4e21a5d](https://github.com/stfsy/node-api-kit/issues/commit/4e21a5dd84d7cb015446c2fc49881cd34be63f96))
+* **deps-dev:** bump @grpc/grpc-js from 1.10.8 to 1.10.9 ([3bbbbe1](https://github.com/stfsy/node-api-kit/issues/commit/3bbbbe18608585e5bb741f2da1636fae772942f7))
+* **deps-dev:** bump braces from 3.0.2 to 3.0.3 ([227efef](https://github.com/stfsy/node-api-kit/issues/commit/227efeff85967a9816e08db8c3e03e230b4520e6))
+* **deps-dev:** bump c8 from 10.0.0 to 10.1.2 ([7d30807](https://github.com/stfsy/node-api-kit/issues/commit/7d30807f71adf36a76081d8435db999751c7743e))
+* **deps-dev:** bump c8 from 9.1.0 to 10.0.0 ([67ea9ed](https://github.com/stfsy/node-api-kit/issues/commit/67ea9edd4571948b94bbacdabf911d791d6889d3))
+* **deps-dev:** bump chai from 5.1.0 to 5.1.1 ([cc0a60e](https://github.com/stfsy/node-api-kit/issues/commit/cc0a60eab9169facf98b82892de9b8b5da03dddd))
+* **deps-dev:** bump eslint from 9.0.0 to 9.1.0 ([e8acece](https://github.com/stfsy/node-api-kit/issues/commit/e8acece265982a75e6ff087b8a9792bd5bf50f53))
+* **deps-dev:** bump eslint from 9.1.0 to 9.1.1 ([d1e5209](https://github.com/stfsy/node-api-kit/issues/commit/d1e52091db29303289723482e4a0f7abab34bb50))
+* **deps-dev:** bump eslint from 9.1.1 to 9.2.0 ([d6a5322](https://github.com/stfsy/node-api-kit/issues/commit/d6a5322e71806adac068245460176dfef2452d23))
+* **deps-dev:** bump eslint from 9.2.0 to 9.3.0 ([870df28](https://github.com/stfsy/node-api-kit/issues/commit/870df28487c6b8dfc5a60cecaa2f34d432ba5c37))
+* **deps-dev:** bump eslint from 9.3.0 to 9.4.0 ([35eae3f](https://github.com/stfsy/node-api-kit/issues/commit/35eae3fc16a87ee3bd2a09449cb7f1be479e8500))
+* **deps-dev:** bump eslint from 9.4.0 to 9.5.0 ([8a06949](https://github.com/stfsy/node-api-kit/issues/commit/8a0694916c0c685dbd704d701a9b5d01e0ced9a0))
+* **deps-dev:** bump eslint from 9.5.0 to 9.6.0 ([d7e840b](https://github.com/stfsy/node-api-kit/issues/commit/d7e840b0778b1f1a0a01a70ce6ccecaf752e41c6))
+* **deps-dev:** bump eslint from 9.6.0 to 9.7.0 ([14e7d0d](https://github.com/stfsy/node-api-kit/issues/commit/14e7d0d526e178349184e370baaa4d4759df90ae))
+* **deps-dev:** bump eslint from 9.7.0 to 9.8.0 ([60fec45](https://github.com/stfsy/node-api-kit/issues/commit/60fec45082eee1f5cdddf8942d4ecc7fe518e1e8))
+* **deps-dev:** bump mocha from 10.4.0 to 10.5.0 ([93ec81f](https://github.com/stfsy/node-api-kit/issues/commit/93ec81ff08ff53f7c034eb33b4d4b3c91320b3b1))
+* **deps-dev:** bump mocha from 10.5.0 to 10.5.2 ([b1dfb7d](https://github.com/stfsy/node-api-kit/issues/commit/b1dfb7d2c42c8a4f50d4bdde583a28fbb6233ff3))
+* **deps-dev:** bump mocha from 10.5.2 to 10.6.0 ([f86be66](https://github.com/stfsy/node-api-kit/issues/commit/f86be66bfd6a002c8972e6029259dd1aa8f9e558))
+* **deps-dev:** bump mocha from 10.6.0 to 10.7.0 ([ec251da](https://github.com/stfsy/node-api-kit/issues/commit/ec251da14b4ef24fa9467a65572a80f943355400))
+* **deps-dev:** bump nodemon from 3.1.0 to 3.1.1 ([233b0da](https://github.com/stfsy/node-api-kit/issues/commit/233b0dadd776e245d5b5449dcfcd71e2880c6f1b))
+* **deps-dev:** bump nodemon from 3.1.1 to 3.1.3 ([41660c7](https://github.com/stfsy/node-api-kit/issues/commit/41660c7f5aa3f0bf77aa57be6ce630fe5cc583f2))
+* **deps-dev:** bump nodemon from 3.1.3 to 3.1.4 ([c1a861a](https://github.com/stfsy/node-api-kit/issues/commit/c1a861aefceffb61c55ec38a716433260646bfc4))
+* **deps-dev:** bump nyc from 15.1.0 to 17.0.0 ([be3d9ca](https://github.com/stfsy/node-api-kit/issues/commit/be3d9caf365995b8596c171b79cbe04290c5d4bc))
+* **deps-dev:** bump pino-pretty from 11.0.0 to 11.1.0 ([b898284](https://github.com/stfsy/node-api-kit/issues/commit/b898284ee06cc92838387a87490342c8472968ba))
+* **deps-dev:** bump pino-pretty from 11.1.0 to 11.2.0 ([996f430](https://github.com/stfsy/node-api-kit/issues/commit/996f4300d64565e82b555f5c7182b7efa48394d8))
+* **deps-dev:** bump pino-pretty from 11.2.0 to 11.2.1 ([3b51267](https://github.com/stfsy/node-api-kit/issues/commit/3b512678719ec635221f9660b009c382ce7066ce))
+* **deps-dev:** bump pino-pretty from 11.2.1 to 11.2.2 ([2a58282](https://github.com/stfsy/node-api-kit/issues/commit/2a58282e59b959c27faeb1da99d798713e87afa0))
+* **deps-dev:** bump supertest from 6.3.4 to 7.0.0 ([1ff8595](https://github.com/stfsy/node-api-kit/issues/commit/1ff85955abfc6830e3b2944e2e593b543620d867))
+* **deps-dev:** bump typescript from 5.4.3 to 5.4.4 ([0e678b3](https://github.com/stfsy/node-api-kit/issues/commit/0e678b3c4542602d4543d4d016101b44194d779b))
+* **deps-dev:** bump typescript from 5.4.4 to 5.4.5 ([c1e8e13](https://github.com/stfsy/node-api-kit/issues/commit/c1e8e13bc7f59e3916a9df8bf1822586b54ced46))
+* **deps-dev:** bump typescript from 5.4.5 to 5.5.2 ([03f9242](https://github.com/stfsy/node-api-kit/issues/commit/03f92429644bdf89eee7896043452bc62e83de47))
+* **deps-dev:** bump typescript from 5.5.2 to 5.5.3 ([021327a](https://github.com/stfsy/node-api-kit/issues/commit/021327ab66e3fda6a7ecbd734792cb89c798dd49))
+* **deps-dev:** bump typescript from 5.5.3 to 5.5.4 ([7f20d2f](https://github.com/stfsy/node-api-kit/issues/commit/7f20d2f9bc6315b0931e840b37cd80d338f0dd56))
+* **deps:** bump actions/checkout from 4.1.2 to 4.1.3 ([efec05c](https://github.com/stfsy/node-api-kit/issues/commit/efec05ccc7f79c7a8ea2bc0281e139f7b60c7e7f))
+* **deps:** bump actions/checkout from 4.1.3 to 4.1.4 ([8ca3235](https://github.com/stfsy/node-api-kit/issues/commit/8ca32357dc9a46afbd7b3768b3ee92dcf9fdb1c8))
+* **deps:** bump actions/checkout from 4.1.4 to 4.1.5 ([eaf03ca](https://github.com/stfsy/node-api-kit/issues/commit/eaf03cae7b35925b74a24e9fd8fb2956f5680fa6))
+* **deps:** bump actions/checkout from 4.1.6 to 4.1.7 ([e743f59](https://github.com/stfsy/node-api-kit/issues/commit/e743f59a7e73233ebb5d43c079e8911edfe2b290))
+* **deps:** bump fastest-validator from 1.17.0 to 1.18.0 ([a4ba3a2](https://github.com/stfsy/node-api-kit/issues/commit/a4ba3a26f9ae8563af41683f6de0de6a6a3b56f8))
+* **deps:** bump fastest-validator from 1.18.0 to 1.19.0 ([5b00581](https://github.com/stfsy/node-api-kit/issues/commit/5b0058111cf251c50851cdc9bce2649cd0da136f))
+* **deps:** bump nanoid from 5.0.6 to 5.0.7 ([97c2657](https://github.com/stfsy/node-api-kit/issues/commit/97c2657556da42631f63a0980ff9f0f5a4fd44fc))
+* **deps:** bump pino from 8.19.0 to 8.20.0 ([b70e702](https://github.com/stfsy/node-api-kit/issues/commit/b70e702b446ba75c720c50da97c1d0b1b3cca7e7))
+* **deps:** bump pino from 8.20.0 to 9.0.0 ([0702c56](https://github.com/stfsy/node-api-kit/issues/commit/0702c56d6976700e4249235941ce058eca75a69a))
+* **deps:** bump pino from 9.0.0 to 9.1.0 ([c767425](https://github.com/stfsy/node-api-kit/issues/commit/c767425ba516a369d190e0c5631b0e5d0e469bb4))
+* **deps:** bump pino from 9.0.0 to 9.1.0 ([58ee5ff](https://github.com/stfsy/node-api-kit/issues/commit/58ee5ff248c44052cd16233e265b1e9360df9602))
+* **deps:** bump pino from 9.1.0 to 9.2.0 ([32b24a2](https://github.com/stfsy/node-api-kit/issues/commit/32b24a25a99374b1fb31e55fb796a2ed14d67124))
+* **deps:** bump pino from 9.2.0 to 9.3.1 ([80c8d9a](https://github.com/stfsy/node-api-kit/issues/commit/80c8d9a207f2b240d2457538498ba3fe9b7cf0a9))
+* **deps:** bump pino from 9.3.1 to 9.3.2 ([2160d4e](https://github.com/stfsy/node-api-kit/issues/commit/2160d4e42b398813b8a23d20039bb6c33ce17c71))
+* **deps:** bump re2 from 1.20.10 to 1.20.11 ([832b9cf](https://github.com/stfsy/node-api-kit/issues/commit/832b9cfcfd68b2929d058deebfa9907d8589a014))
+* **deps:** bump re2 from 1.20.10 to 1.20.11 ([a315039](https://github.com/stfsy/node-api-kit/issues/commit/a315039261939d2c775174dc462c360ae549d931))
+* **deps:** bump re2 from 1.20.11 to 1.20.12 ([004c642](https://github.com/stfsy/node-api-kit/issues/commit/004c6429e51069de40adbe90ed33a3d5560f71a9))
+* **deps:** bump re2 from 1.20.12 to 1.21.0 ([624e16b](https://github.com/stfsy/node-api-kit/issues/commit/624e16bf15095e83ab8fc61963591308db2cd2da))
+* **deps:** bump re2 from 1.21.1 to 1.21.3 ([7a60174](https://github.com/stfsy/node-api-kit/issues/commit/7a60174541dae800e5049541c839fd40042660ca))
+* **deps:** bump tar from 6.1.15 to 6.2.1 ([b6d89e3](https://github.com/stfsy/node-api-kit/issues/commit/b6d89e3a8e158c0be76524cb9a8759c69ca5c3a2))
+* **deps:** remove snake case dependency ([f42683d](https://github.com/stfsy/node-api-kit/issues/commit/f42683d151d7ec5f9ee95a153abacd51dd110534))
+* **deps:** update dependencies ([2df1fdf](https://github.com/stfsy/node-api-kit/issues/commit/2df1fdfeb66c93b5a0b09da729c71ef460c977a4))
+* **package:** do not pass ext arg to eslint ([cd3473c](https://github.com/stfsy/node-api-kit/issues/commit/cd3473c95a5e95ef310c304774c4ef7c47a73c87))
+* update github actions ([ce16463](https://github.com/stfsy/node-api-kit/issues/commit/ce16463d245935504168aa720ca550ebd7d38c63))
+* use change-case instead of snake-case dep ([dd54732](https://github.com/stfsy/node-api-kit/issues/commit/dd5473258c043d871c8a037819670b2f6a2226df))
+* use new eslint config ([712a2f3](https://github.com/stfsy/node-api-kit/issues/commit/712a2f31b4b9335784609dfc571cabc8e3ee7eea))
+
 ## [0.21.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.20.0...v0.21.0) (2024-04-06)
 
 
