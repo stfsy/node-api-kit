@@ -30,4 +30,28 @@ describe('ImmutableFieldValidator', () => {
         const result = await resourceIdValidator({ name: 'test' })
         expect(result.at(0).type).to.equal('fieldImmutable')
     })
+
+    it('does not get fooled by empty strings', async () => {
+        const resourceIdValidator = validator.compile({ name: useImmutableFieldValidator({}) })
+        const result = await resourceIdValidator({ name: '' })
+        expect(result.at(0).type).to.equal('fieldImmutable')
+    })
+
+    it('does not get fooled by value 0', async () => {
+        const resourceIdValidator = validator.compile({ name: useImmutableFieldValidator({}) })
+        const result = await resourceIdValidator({ name: 0 })
+        expect(result.at(0).type).to.equal('fieldImmutable')
+    })
+
+    it('validates if immutable field is undefined', async () => {
+        const resourceIdValidator = validator.compile({ name: useImmutableFieldValidator({ optional: true }) })
+        const result = await resourceIdValidator({ first_name: undefined })
+        expect(result).to.be.true
+    })
+
+    it('validates if immutable field is null', async () => {
+        const resourceIdValidator = validator.compile({ name: useImmutableFieldValidator({ optional: true }) })
+        const result = await resourceIdValidator({ first_name: null })
+        expect(result).to.be.true
+    })
 })
