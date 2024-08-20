@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.23.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.22.0...v0.23.0) (2024-08-20)
+
+
+### Bug Fixes
+
+* **immutable-field-validator:** do not accept values that are falsy and not undefined or null ([c26c2ae](https://github.com/stfsy/node-api-kit/issues/commit/c26c2ae239bfac8dd5f1e186802637d43b6437fb))
+* **not-allow-for-creation-validator:** do not accept values that are falsy and not undefined or null ([29decac](https://github.com/stfsy/node-api-kit/issues/commit/29decac0676e3ce4a6cd9c8c7eb41c33acdc6137))
+
+
+### Chores
+
+* **deps-dev:** bump @discue/open-telemetry-tracing from 1.1.0 to 1.2.0 ([66f6b2a](https://github.com/stfsy/node-api-kit/issues/commit/66f6b2ae062d66e52fe85b43b3d6515098f27252))
+* **deps-dev:** bump eslint from 9.8.0 to 9.9.0 ([cfeeeed](https://github.com/stfsy/node-api-kit/issues/commit/cfeeeedcd1d806433c03f9d0bf3441e4cbc6e2cb))
+* **deps-dev:** bump mocha from 10.7.0 to 10.7.3 ([f8684e9](https://github.com/stfsy/node-api-kit/issues/commit/f8684e98768faa3dbe278456cdd64be7b290722a))
+
 ## [0.22.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.21.0...v0.22.0) (2024-08-08)
 
 
