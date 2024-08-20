@@ -41,6 +41,18 @@ describe('ImmutableFieldValidator', () => {
         expect(result.at(0).type).to.equal('fieldNoCreationViaApi')
     })
 
+    it('does not validate if immutable is empty string', async () => {
+        const resourceIdValidator = validator.compile({ name: useNotAllowedDuringCreationValidator({}) })
+        const result = await resourceIdValidator({ name: '' })
+        expect(result.at(0).type).to.equal('fieldNoCreationViaApi')
+    })
+
+    it('does not validate if immutable is 0', async () => {
+        const resourceIdValidator = validator.compile({ name: useNotAllowedDuringCreationValidator({}) })
+        const result = await resourceIdValidator({ name: 0 })
+        expect(result.at(0).type).to.equal('fieldNoCreationViaApi')
+    })
+
     it('validates if target value is falsy', async () => {
         const resourceIdValidator = validator.compile({ name: useNotAllowedDuringCreationValidator({}) })
         const result = await resourceIdValidator({})
