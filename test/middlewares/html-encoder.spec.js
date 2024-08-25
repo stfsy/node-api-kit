@@ -131,6 +131,25 @@ describe('HtmlEncoder', () => {
                 done()
             })
         })
+
+        it('ignores handle null values', (done) => {
+            const req = requestMock({
+                body: {
+                    name: null,
+                    pets: [{
+                        name: null
+                    }]
+                }
+            })
+            const handler = htmlEncoder({
+                encodeResponsePayload: false
+            })
+            handler(req, null, () => {
+                expect(req.body.name).to.be.undefined
+                expect(req.body.pets.at(0).name).to.be.undefined
+                done()
+            })
+        })
     })
 
     describe('ResponseEncoder', () => {
