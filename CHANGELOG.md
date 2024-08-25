@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.23.1](https://github.com/stfsy/node-api-kit/issues/compare/v0.23.0...v0.23.1) (2024-08-25)
+
+
+### Bug Fixes
+
+* **html-encoder:** do not try to encode null values ([d36eb96](https://github.com/stfsy/node-api-kit/issues/commit/d36eb964d3598230b1bf52d4086fc62ebc834c88))
+
+
+### Chores
+
+* **deps:** bump micromatch from 4.0.5 to 4.0.8 ([3faf3ea](https://github.com/stfsy/node-api-kit/issues/commit/3faf3ea729532f42a7d8ec052c4c16849361d90d))
+* **deps:** update dependencies ([aec0200](https://github.com/stfsy/node-api-kit/issues/commit/aec0200da965d5f697f695e308212931eab84044))
+* **package:** add script to release patch version ([ff5b53b](https://github.com/stfsy/node-api-kit/issues/commit/ff5b53b974d90a446606e34e97294a5a243cc323))
+
 ## [0.23.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.22.0...v0.23.0) (2024-08-20)
 
 
