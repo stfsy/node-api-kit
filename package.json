@@ -59,6 +59,7 @@
     "publish-version": "npm publish --access public",
     "push-tags": "git push --follow-tags origin main",
     "release-generic": "npm run push-tags && npm run create-types && npm run publish-version && npm run remove-types",
+    "release-patch": "npm run standard-version -- --release-as patch && npm run release-generic",
     "release-minor": "npm run standard-version -- --release-as minor && npm run release-generic",
     "release-major": "npm run standard-version -- --release-as major && npm run release-generic"
   },
