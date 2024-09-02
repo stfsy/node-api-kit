@@ -1,5 +1,5 @@
 import express from 'hyper-express';
-import { accessLog, bodyParser, contentType, defaultVersion, normalizeRequest, securityHeaders } from '../../lib/middlewares/index.js';
+import { accessLog, bodyParser, contentType, normalizeRequest, securityHeaders } from '../../lib/middlewares/index.js';
 import queueEndpoints from './queues/endpoints.js';
 
 export default () => {
@@ -9,7 +9,6 @@ export default () => {
     app.use(securityHeaders())
     app.use(contentType())
     app.use(normalizeRequest())
-    app.use(defaultVersion())
     app.use(bodyParser())
     // app.use(upstreamCacheControl())
     // app.use(htmlEncoder({

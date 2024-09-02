@@ -29,7 +29,6 @@ By default, ten `cross-cutting` middlewares are configured. These build the foun
 - ✅ `bodyParser`: Parses incoming JSON request bodies into a JavaScript objects
 - ✅ `contentType`: Validates the incoming content type, if the request method implies a state change e.g. POST
 - ✅ `cors`: Adds additional headers to the response to protect from cross-origin resource requests and data exposure
-- ✅ `defaultVersion`: Allows to move clients to a different API version in case of e.g. security incidents
 - ✅ `htmlEncoder`: Encodes HTML embedded in request and response payloads to mitigate XSS attacks
 - ✅ `normalizeRequest`: Ensures request attributes are similar across requests e.g. removes a trailing slash
 - ✅ `securityHeaders`: Adds additional security headers to the response to prevent common attacks and protect users and their data
