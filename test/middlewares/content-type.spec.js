@@ -10,15 +10,19 @@ describe('ContentTypeMiddleware', () => {
     describe('with default settings', () => {
         const handler = contentTypeMiddleware()
 
-        it('calls next for method GET even without content-type header', (done) => {
-            const req = requestMock({ method: 'GET', headers: {} })
-            handler(req, null, done)
+        it('calls next for method GET even without content-type header', () => {
+            return new Promise((resolve) => {
+                const req = requestMock({ method: 'GET', headers: {} })
+                handler(req, null).then(resolve)
+            })
         })
 
         HTTP_DELETE_POST_PUT.forEach((method) => {
-            it(`calls next for method ${method} if content type is application/json`, (done) => {
-                const req = requestMock({ method, headers: { 'content-type': 'application/json' } })
-                handler(req, null, done)
+            it(`calls next for method ${method} if content type is application/json`, () => {
+                return new Promise((resolve, reject) => {
+                    const req = requestMock({ method, headers: { 'content-type': 'application/json' } })
+                    handler(req).then(resolve)
+                })
             })
         })
 
@@ -58,9 +62,11 @@ describe('ContentTypeMiddleware', () => {
         const handler = contentTypeMiddleware({ contentType })
 
         HTTP_DELETE_POST_PUT.forEach((method) => {
-            it(`calls next for method ${method} if content type is application/json`, (done) => {
-                const req = requestMock({ method, headers: { 'content-type': contentType } })
-                handler(req, null, done)
+            it(`calls next for method ${method} if content type is ${contentType}`, () => {
+                return new Promise((resolve, reject) => {
+                    const req = requestMock({ method, headers: { 'content-type': contentType } })
+                    handler(req).then(resolve)
+                })
             })
         })
 
@@ -99,15 +105,23 @@ describe('ContentTypeMiddleware', () => {
         const contentType = 'application/json'
         const handler = contentTypeMiddleware({ httpMethods: ['CONNECT'] })
 
-        it(`calls next for method CONNECT if content type is application/json`, (done) => {
-            const req = requestMock({ method: 'CONNECT', headers: { 'content-type': contentType } })
-            handler(req, null, done)
+        it(`calls next for method CONNECT if content type is application/json`, () => {
+            return new Promise((resolve, reject) => {
+                try {
+                    const req = requestMock({ method: 'CONNECT', headers: { 'content-type': contentType } })
+                    handler(req).then(resolve, reject)
+                } catch (e) {
+                    return Promise.reject(e)
+                }
+            })
         })
 
         HTTP_DELETE_POST_PUT.forEach((method) => {
-            it(`calls next for method ${method} if content type is not set`, (done) => {
-                const req = requestMock({ method, headers: {} })
-                handler(req, null, done)
+            it(`calls next for method ${method} if content type is not set`, () => {
+                return new Promise((resolve) => {
+                    const req = requestMock({ method, headers: {} })
+                    handler(req).then(resolve)
+                })
             })
         })
     })

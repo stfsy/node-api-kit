@@ -53,13 +53,18 @@ describe('RateLimitMiddleware', () => {
             storeIpAccess: async () => true
         })
 
-        it('calls next', (done) => {
-            const req = requestMock({
-                method: 'GET', headers: {
-                    'fastly-client-ip': '1'
-                }
+        it('calls next', async () => {
+            return new Promise((resolve, reject) => {
+                const req = requestMock({
+                    method: 'GET', headers: {
+                        'fastly-client-ip': '1'
+                    }
+                })
+                const res = responseMock({
+                    send: reject
+                })
+                handler(req, res, null).then(resolve, reject)
             })
-            handler(req, null, done)
         })
     })
 
@@ -70,13 +75,18 @@ describe('RateLimitMiddleware', () => {
             ipRequestHeaderName: 'my-ip'
         })
 
-        it('calls next', (done) => {
-            const req = requestMock({
-                method: 'GET', headers: {
-                    'my-ip': '1'
-                }
+        it('calls next', () => {
+            return new Promise((resolve, reject) => {
+                const req = requestMock({
+                    method: 'GET', headers: {
+                        'my-ip': '1'
+                    }
+                })
+                const res = responseMock({
+                    send: reject
+                })
+                handler(req, res, null).then(resolve, reject)
             })
-            handler(req, null, done)
         })
     })
 
@@ -87,11 +97,16 @@ describe('RateLimitMiddleware', () => {
             failIfNoIpPresent: false
         })
 
-        it('calls next', (done) => {
-            const req = requestMock({
-                method: 'GET', headers: {}
+        it('calls next', () => {
+            return new Promise((resolve, reject) => {
+                const req = requestMock({
+                    method: 'GET', headers: {}
+                })
+                const res = responseMock({
+                    send: reject
+                })
+                handler(req, res, null).then(resolve, reject)
             })
-            handler(req, null, done)
         })
     })
 
