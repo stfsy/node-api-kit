@@ -7,16 +7,16 @@ import apiTest from "./api-test.js";
 describe('HttPutResourceEndpoint', () => {
     let server
 
-    before(() => {
-        server = apiServer()
+    before(async () => {
+        server = await apiServer()
     })
 
-    afterEach(() => {
+    after(() => {
         service.clear()
     })
 
     after(() => {
-        return new Promise((resolve) => server.close(resolve))
+        return server.close()
     })
 
     it('returns 404 if resource was not found', () => {

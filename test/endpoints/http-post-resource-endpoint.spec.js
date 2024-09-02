@@ -7,16 +7,16 @@ import apiTest from "./api-test.js";
 describe('HttpPostResourceEndpoint', () => {
     let server
 
-    before(() => {
-        server = apiServer()
+    before(async () => {
+        server = await apiServer()
     })
 
-    afterEach(() => {
+    after(() => {
         service.clear()
     })
 
     after(() => {
-        return new Promise((resolve) => server.close(resolve))
+        return server.close()
     })
 
     it('returns 400 if resource does not match schema', () => {

@@ -7,8 +7,8 @@ import apiTest from "./api-test.js";
 describe('HttpDeleteResourceEndpoint', () => {
     let server
 
-    before(() => {
-        server = apiServer()
+    before(async () => {
+        server = await apiServer()
     })
 
     after(() => {
@@ -16,7 +16,7 @@ describe('HttpDeleteResourceEndpoint', () => {
     })
 
     after(() => {
-        return new Promise((resolve) => server.close(resolve))
+        return server.close()
     })
 
     it('returns 400 if queue id is not a valid resource id', () => {
@@ -49,7 +49,7 @@ describe('HttpDeleteResourceEndpoint', () => {
         const resource = { 1: 2 }
         service.create([id], resource)
         expect(service.get([id])).not.to.be.undefined
-        
+
         await apiTest({ path: `queues/${id}`, method: 'delete' }, (res) => {
             const { body, status } = res
             expect(status).to.equal(200)

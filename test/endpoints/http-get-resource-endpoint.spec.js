@@ -7,8 +7,8 @@ import apiTest from "./api-test.js";
 describe('HttpGetResourceEndpoint', () => {
     let server
 
-    before(() => {
-        server = apiServer()
+    before(async () => {
+        server = await apiServer()
     })
 
     after(() => {
@@ -16,7 +16,7 @@ describe('HttpGetResourceEndpoint', () => {
     })
 
     after(() => {
-        return new Promise((resolve) => server.close(resolve))
+        return server.close()
     })
 
     it('returns 400 if queue id is not a valid resource id', () => {
