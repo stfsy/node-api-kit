@@ -1,4 +1,5 @@
 import { expect } from 'chai'
+import { decode } from 'html-entities'
 import { sendInternalError } from '../../lib/http/send-http-error.js'
 import { sendOk } from '../../lib/http/send-http-ok.js'
 import htmlEncoder from '../../lib/middlewares/html-encoder.js'
@@ -14,6 +15,20 @@ describe('HtmlEncoder', () => {
             handler(req, {}, () => {
                 expect(req.body).to.equal('&lt;alert&gt;Hello&lt;/alert&gt;')
                 done()
+            })
+        })
+
+        it('encodes a request body string that can be decoded', (done) => {
+            const req = requestMock({ body: 'function (input) { return {"hello": "world"} }' })
+            const handler = htmlEncoder()
+            handler(req, {}, () => {
+                try {
+                    expect(req.body).to.equal('function (input) { return {&quot;hello&quot;: &quot;world&quot;} }')
+                    expect(decode(req.body)).to.equal('function (input) { return {"hello": "world"} }')
+                    done()
+                } catch (e) {
+                    done(e)
+                }
             })
         })
 
