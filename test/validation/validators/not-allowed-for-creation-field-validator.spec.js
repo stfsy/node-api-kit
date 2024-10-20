@@ -35,6 +35,13 @@ describe('ImmutableFieldValidator', () => {
         expect(result).to.be.true
     })
 
+    it('sets a default value', async () => {
+        const payload = { first_name: 'test' }
+        const resourceIdValidator = validator.compile({ name: useNotAllowedDuringCreationValidator({ optional: true, default: 'Tom' }) })
+        const result = await resourceIdValidator(payload)
+        expect(payload.name).to.equal('Tom')
+    })
+
     it('does not validate if immutable field is set', async () => {
         const resourceIdValidator = validator.compile({ name: useNotAllowedDuringCreationValidator({}) })
         const result = await resourceIdValidator({ name: 'test' })
