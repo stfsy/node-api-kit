@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.24.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.23.1...v0.24.0) (2024-10-20)
+
+
+### Chores
+
+* **deps-dev:** bump @stylistic/eslint-plugin from 2.6.4 to 2.7.2 ([3adcc28](https://github.com/stfsy/node-api-kit/issues/commit/3adcc28f25d359910b3f2c7bc4f26510dd457111))
+* **deps-dev:** bump @stylistic/eslint-plugin from 2.7.2 to 2.8.0 ([909600d](https://github.com/stfsy/node-api-kit/issues/commit/909600d4b39054b7e66765508e6db8de7b964771))
+* **deps-dev:** bump @stylistic/eslint-plugin from 2.8.0 to 2.9.0 ([daf8d06](https://github.com/stfsy/node-api-kit/issues/commit/daf8d06085dc87921e36fc7a064abdeddfb22efe))
+* **deps-dev:** bump eslint from 9.10.0 to 9.11.0 ([46628e6](https://github.com/stfsy/node-api-kit/issues/commit/46628e6cc9479dbcb4d93b6219f168da23d5a952))
+* **deps-dev:** bump eslint from 9.11.0 to 9.11.1 ([91d5173](https://github.com/stfsy/node-api-kit/issues/commit/91d5173dc1a1df8346b71b19310d067f096d10cf))
+* **deps-dev:** bump eslint from 9.11.1 to 9.12.0 ([eacaba3](https://github.com/stfsy/node-api-kit/issues/commit/eacaba3aa0e8a57e2247f9ed76f14895e6edbe4a))
+* **deps-dev:** bump eslint from 9.9.1 to 9.10.0 ([63e0c53](https://github.com/stfsy/node-api-kit/issues/commit/63e0c5325ec8e092f1276da43cf93f1da04ec434))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.2.2 to 50.2.3 ([e83776d](https://github.com/stfsy/node-api-kit/issues/commit/e83776d69163fe79bb53cde1b425e25093b766de))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.2.3 to 50.2.4 ([9143aaa](https://github.com/stfsy/node-api-kit/issues/commit/9143aaa10627c5436b99c663aa57132c49bac093))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.2.4 to 50.3.0 ([5d92811](https://github.com/stfsy/node-api-kit/issues/commit/5d928117d8752173ae074de682ae14033d46aa7f))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.3.0 to 50.3.1 ([d860a57](https://github.com/stfsy/node-api-kit/issues/commit/d860a5797f381fd3086af450ecf7f2608239f39b))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.3.1 to 50.4.1 ([0ca2d30](https://github.com/stfsy/node-api-kit/issues/commit/0ca2d307d6ae5ebc478aab9c2cb0c49dc14b6bbd))
+* **deps-dev:** bump nodemon from 3.1.4 to 3.1.7 ([b377ad6](https://github.com/stfsy/node-api-kit/issues/commit/b377ad6dcf46c789479f3015fc59fbac1c883f33))
+* **deps-dev:** bump nyc from 17.0.0 to 17.1.0 ([d843c14](https://github.com/stfsy/node-api-kit/issues/commit/d843c143e512d7c6e7faf05500c27ad087139a14))
+* **deps-dev:** bump typescript from 5.5.4 to 5.6.2 ([40b2ffd](https://github.com/stfsy/node-api-kit/issues/commit/40b2ffd37475288d91a36880ead34a3e07b8d83c))
+* **deps-dev:** bump typescript from 5.6.2 to 5.6.3 ([21a8ee7](https://github.com/stfsy/node-api-kit/issues/commit/21a8ee78bf59ac4fe496577f5960805578efa223))
+* **deps:** bump actions/checkout from 4.1.7 to 4.2.0 ([42a0f45](https://github.com/stfsy/node-api-kit/issues/commit/42a0f45ac70274d8430228c1a937203e59762eef))
+* **deps:** bump actions/checkout from 4.2.0 to 4.2.1 ([f437d82](https://github.com/stfsy/node-api-kit/issues/commit/f437d822e2b601964db419e6270676b5deada521))
+* **deps:** bump body-parser from 1.20.2 to 1.20.3 ([8f1bd2d](https://github.com/stfsy/node-api-kit/issues/commit/8f1bd2d2e0384459298094c4cedd6f3f7900e72c))
+* **deps:** bump express from 4.19.2 to 4.21.0 ([7ab3882](https://github.com/stfsy/node-api-kit/issues/commit/7ab3882dc0f16c1410863b7f9d365ec99fb22048))
+* **deps:** bump express from 4.21.0 to 4.21.1 ([765ee30](https://github.com/stfsy/node-api-kit/issues/commit/765ee307677fe075eed44b1b8da110d74728fd28))
+* **deps:** bump helmet from 7.1.0 to 8.0.0 ([cea624f](https://github.com/stfsy/node-api-kit/issues/commit/cea624f8a94df491a912f1aa16f02fe6dea804c6))
+* **deps:** bump pino from 9.3.2 to 9.4.0 ([f2e55f9](https://github.com/stfsy/node-api-kit/issues/commit/f2e55f995e8ddb53fa568008fb4ec98fbf58e3de))
+* **deps:** update dependencies ([fdfd7af](https://github.com/stfsy/node-api-kit/issues/commit/fdfd7afb2a56836cd18ddf0b857e29327962a35b))
+
 ### [0.23.1](https://github.com/stfsy/node-api-kit/issues/compare/v0.23.0...v0.23.1) (2024-08-25)
 
 
