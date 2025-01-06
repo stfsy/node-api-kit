@@ -86,7 +86,7 @@
     "documentation": "^14.0.3",
     "eslint": "^9.17.0",
     "eslint-plugin-jsdoc": "^50.6.1",
-    "http-graceful-shutdown": "^3.1.13",
+    "http-graceful-shutdown": "^3.1.14",
     "license-check-and-add": "^4.0.5",
     "mocha": "^11.0.1",
     "nodemon": "^3.1.9",
