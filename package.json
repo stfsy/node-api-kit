@@ -88,7 +88,7 @@
     "eslint-plugin-jsdoc": "^50.6.2",
     "http-graceful-shutdown": "^3.1.14",
     "license-check-and-add": "^4.0.5",
-    "mocha": "^11.0.1",
+    "mocha": "^11.1.0",
     "nodemon": "^3.1.9",
     "nyc": "^17.1.0",
     "pino-pretty": "^13.0.0",
