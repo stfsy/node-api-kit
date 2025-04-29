@@ -25,6 +25,13 @@ describe('CreateToUpdateSchemaConverter', () => {
         expect(parsedSchema.test.optional).to.be.true
     })
 
+    it('marks a string as optional', () => {
+        const parsedSchema = converter({
+            test: { type: 'string', empty: false }
+        })
+        expect(parsedSchema.test.optional).to.be.true
+    })
+
     it('replaces not allowed during creation validator with immutable field validator', () => {
         const parsedSchema = converter({
             test: useNotAllowedDuringCreationValidator({})
