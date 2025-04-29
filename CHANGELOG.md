@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.26.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.25.0...v0.26.0) (2025-04-29)
+
+
+### Features
+
+* **http-put-endpoint:** return either alias from request or storage ([77bffe9](https://github.com/stfsy/node-api-kit/issues/commit/77bffe9d8c5d32fa9b0b298436d361dc6b7c2903))
+
+
+### Chores
+
+* **deps-dev:** bump eslint from 9.23.0 to 9.24.0 ([be9072a](https://github.com/stfsy/node-api-kit/issues/commit/be9072a3524b686774d45a55a9205ce64e409ae8))
+* **deps-dev:** bump eslint from 9.24.0 to 9.25.1 ([8ffb2ee](https://github.com/stfsy/node-api-kit/issues/commit/8ffb2ee5f935000dc83e0cd3e9040d75a7f3cb69))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.6.9 to 50.6.11 ([4f9ed2a](https://github.com/stfsy/node-api-kit/issues/commit/4f9ed2ab93e7a651e40cafe810240f24099d5878))
+* **deps-dev:** bump formidable from 3.5.1 to 3.5.4 ([8aae43b](https://github.com/stfsy/node-api-kit/issues/commit/8aae43b5943e87a7d7b0271b7141c9c5f6aaaa95))
+* **deps-dev:** bump nodemon from 3.1.9 to 3.1.10 ([8ec7bba](https://github.com/stfsy/node-api-kit/issues/commit/8ec7bba865399afdcb80af3f32fd9873b287f040))
+* **deps-dev:** bump typescript from 5.8.2 to 5.8.3 ([61ed605](https://github.com/stfsy/node-api-kit/issues/commit/61ed60512679705b9895c1de3cab65f06fe1db87))
+* **deps:** bump html-entities from 2.5.3 to 2.6.0 ([599ea67](https://github.com/stfsy/node-api-kit/issues/commit/599ea679dbcc39e3a2c7aef9868c046716e47b6e))
+* **deps:** update dependencies ([133cad0](https://github.com/stfsy/node-api-kit/issues/commit/133cad0a32d434b30957cf2f7fbe9e67639c922a))
+
 ## [0.25.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.24.0...v0.25.0) (2025-03-24)
 
 
