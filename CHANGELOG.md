@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.27.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.26.0...v0.27.0) (2025-05-17)
+
+
+### Bug Fixes
+
+* check body keys only if body is not null ([8a6ddaf](https://github.com/stfsy/node-api-kit/issues/commit/8a6ddaf95999ade0b7bd6f933f1e4b23d3894bca))
+
+
+### Chores
+
+* **deps-dev:** bump eslint from 9.25.1 to 9.26.0 ([07a325e](https://github.com/stfsy/node-api-kit/issues/commit/07a325ea88d1a59ea96903114ffaa07cb0a923d4))
+* **deps-dev:** bump eslint-plugin-jsdoc from 50.6.11 to 50.6.14 ([13d72c5](https://github.com/stfsy/node-api-kit/issues/commit/13d72c5fe90c9e46b6c72cd988c4dbf9472f14a1))
+* **deps-dev:** bump mocha from 11.1.0 to 11.2.2 ([246f209](https://github.com/stfsy/node-api-kit/issues/commit/246f2095f2a9180a1765fe1b746964da35d38d31))
+* **deps-dev:** bump supertest from 7.1.0 to 7.1.1 ([e5e9209](https://github.com/stfsy/node-api-kit/issues/commit/e5e9209719b7b60521dba4cb3dbfc067dc4b1818))
+* **deps:** bump fastest-validator from 1.19.0 to 1.19.1 ([f0a80ad](https://github.com/stfsy/node-api-kit/issues/commit/f0a80ad90130fb0c554f3a245468b1789af30c94))
+* **deps:** bump re2 from 1.21.4 to 1.21.5 ([34d5e0a](https://github.com/stfsy/node-api-kit/issues/commit/34d5e0a518d6e34d31437f028c7d136790e0801d))
+* **deps:** update body-parser ([e2538d4](https://github.com/stfsy/node-api-kit/issues/commit/e2538d4e0fefbfe162f446b48947eaef776e499e))
+* **deps:** update dependencies ([8372c14](https://github.com/stfsy/node-api-kit/issues/commit/8372c14517dcbd32c0f123676e0a1f92f6b334ab))
+
 ## [0.26.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.25.0...v0.26.0) (2025-04-29)
 
 
