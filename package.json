@@ -89,7 +89,7 @@
     "http-graceful-shutdown": "^3.1.14",
     "license-check-and-add": "^4.0.5",
     "mocha": "^11.7.5",
-    "nodemon": "^3.1.10",
+    "nodemon": "^3.1.11",
     "nyc": "^17.1.0",
     "pino-pretty": "^13.1.2",
     "standard-version": "^9.5.0",
