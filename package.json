@@ -75,7 +75,7 @@
     "helmet": "^8.1.0",
     "html-entities": "^2.6.0",
     "nanoid": "^5.1.6",
-    "pino": "^10.2.1",
+    "pino": "^10.3.0",
     "re2": "^1.23.0"
   },
   "devDependencies": {
