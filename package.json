@@ -80,7 +80,7 @@
     "c8": "^11.0.0",
     "chai": "^6.2.2",
     "documentation": "^14.0.3",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "eslint-js": "github:eslint/js",
     "eslint-plugin-jsdoc": "^62.8.1",
     "globals": "^17.4.0",
