@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.0.0 (2026-04-28)
+
+
+### Features
+
+* **http-put-endpoint:** return either alias from request or storage ([77bffe9](https://github.com/stfsy/node-api-kit/commit/77bffe9d8c5d32fa9b0b298436d361dc6b7c2903))
+
+
+### Bug Fixes
+
+* check body keys only if body is not null ([8a6ddaf](https://github.com/stfsy/node-api-kit/commit/8a6ddaf95999ade0b7bd6f933f1e4b23d3894bca))
+* **html-encoder:** all types of json values encoded ([71a15ef](https://github.com/stfsy/node-api-kit/commit/71a15efff2edc202d53882e35d37fdfe75e9157e))
+
 ## [0.27.0](https://github.com/stfsy/node-api-kit/issues/compare/v0.26.0...v0.27.0) (2025-05-17)
 
 
