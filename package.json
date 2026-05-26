@@ -85,7 +85,7 @@
     "globals": "^17.6.0",
     "http-graceful-shutdown": "^3.1.16",
     "license-check-and-add": "^4.0.5",
-    "mocha": "^11.7.5",
+    "mocha": "^11.7.6",
     "nodemon": "^3.1.14",
     "nyc": "^18.0.0",
     "pino-pretty": "^13.1.3",
