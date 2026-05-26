@@ -67,7 +67,7 @@
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "fastest-validator": "^1.19.1",
-    "helmet": "^8.1.0",
+    "helmet": "^8.2.0",
     "html-entities": "^2.6.0",
     "nanoid": "^5.1.11",
     "pino": "^10.3.1",
