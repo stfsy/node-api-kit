@@ -69,7 +69,7 @@
     "fastest-validator": "^1.19.1",
     "helmet": "^8.2.0",
     "html-entities": "^2.6.0",
-    "nanoid": "^5.1.15",
+    "nanoid": "^5.1.16",
     "pino": "^10.3.1",
     "re2": "^1.24.1"
   },
