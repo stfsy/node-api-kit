@@ -82,7 +82,7 @@
     "documentation": "^14.0.3",
     "eslint": "^10.8.1",
     "eslint-plugin-jsdoc": "^64.1.0",
-    "globals": "^17.8.0",
+    "globals": "^17.11.0",
     "http-graceful-shutdown": "^4.0.0",
     "license-check-and-add": "^4.0.5",
     "mocha": "^11.7.6",
