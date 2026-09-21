@@ -81,7 +81,7 @@
     "chai": "^6.2.2",
     "documentation": "^14.0.3",
     "eslint": "^10.10.0",
-    "eslint-plugin-jsdoc": "^64.3.9",
+    "eslint-plugin-jsdoc": "^64.5.3",
     "globals": "^17.12.0",
     "http-graceful-shutdown": "^4.0.0",
     "license-check-and-add": "^4.0.5",
