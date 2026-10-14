@@ -71,7 +71,7 @@
     "html-entities": "^2.6.0",
     "nanoid": "^6.0.1",
     "pino": "^10.4.0",
-    "re2": "^1.26.1"
+    "re2": "^1.27.0"
   },
   "devDependencies": {
     "@discue/open-telemetry-tracing": "^1.4.0",
