@@ -1,6 +1,6 @@
 {
   "name": "@stfsy/api-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple scheduling and queueing",
   "engines": {
     "node": ">= 18"
@@ -76,12 +76,12 @@
   "devDependencies": {
     "@discue/open-telemetry-tracing": "^1.4.0",
     "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^6.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "c8": "^12.0.0",
     "chai": "^6.3.0",
     "documentation": "^14.0.3",
-    "eslint": "^10.15.0",
-    "eslint-plugin-jsdoc": "^65.5.0",
+    "eslint": "^10.14.0",
+    "eslint-plugin-jsdoc": "^65.4.6",
     "globals": "^17.14.0",
     "http-graceful-shutdown": "^4.0.0",
     "license-check-and-add": "^4.0.5",
